@@ -1,0 +1,124 @@
+# PlugRag Nano-GraphRAG reproducibility config.
+# Copy this file to your own config path, then set PLUGRAG_CONFIG to that path.
+
+llm:
+  provider: "openai"
+  model: "deepseek-ai/DeepSeek-V3"
+  temperature: 0.0
+
+api_keys:
+  # Leave empty here for GitHub. Prefer setting OPENAI_API_KEY in your shell.
+  openai_api_key: ""
+  openai_base_url: "https://api.siliconflow.cn/v1"
+
+models:
+  # BAAI/bge-m3 through SiliconFlow returns 1024-dimensional embeddings.
+  embedding_model: "BAAI/bge-m3"
+  embedding_dim: 1024
+  max_token_size: 8192
+  rerank_model: "BAAI/bge-reranker-v2-m3"
+
+storage:
+  # Existing Nano-GraphRAG index/cache directory.
+  working_dir: "work_dir_data_mix"
+  # Paths below are relative to working_dir unless you set absolute paths.
+  rgcn_data_file: "rgcn/rgcn_data.pt"
+  rgcn_embeddings_file: "rgcn/rgcn_embeddings.pt"
+  rgcn_mapping_file: "rgcn/rgcn_embeddings_mapping.json"
+  gcn_data_file: "gcn/gcn_data.pt"
+  gcn_embeddings_file: "gcn/gcn_embeddings.pt"
+  gcn_mapping_file: "gcn/gcn_embeddings_mapping.json"
+  multi_edge_data_file: "multi_edge/multi_edge_rgcn_data.pt"
+  multi_edge_embeddings_file: "multi_edge/rgcn_transe_embeddings.pt"
+  multi_edge_mapping_file: "multi_edge/rgcn_transe_mapping.json"
+
+graphml_conversion:
+  # Optional standalone GraphML conversion entry points:
+  # python -m nano_graphrag.convert_graphml_to_rgcn_data --config config_example.yaml
+  # python -m nano_graphrag.convert_graphml_to_simple_gcn_data --config config_example.yaml
+  # python -m nano_graphrag.convert_graphml_to_multi_edge_rgcn_data --config config_example.yaml
+  graphml_input: "work_dir_data_mix/graph_chunk_entity_relation.graphml"
+  rgcn_output_file: "rgcn/rgcn_data.pt"
+  gcn_output_file: "gcn/gcn_data.pt"
+  multi_edge_output_file: "multi_edge/multi_edge_rgcn_data.pt"
+  embedding_model: "BAAI/bge-m3"
+  batch_size: 20
+
+indexing:
+  # If you already have a Nano working_dir, keep insert_before_training false.
+  # To rebuild from raw contexts first, set context_file and insert_before_training true.
+  context_file: ""
+  insert_before_training: false
+  enable_llm_cache: false
+
+retrieval:
+  top_k: 20
+  enable_naive_rag: true
+  rgcn_enabled: true
+  rgcn_expand_k: 10
+  rgcn_cluster_limit: 50
+  rgcn_rerank_alpha: 0.5
+
+batch_query:
+  input_file: "queries.jsonl"
+  output_file: "answers.jsonl"
+  concurrency: 1
+  # Main modes: plugrag_full, plugrag_rank_only, plugrag_vote_only.
+  # Deprecated aliases still work: rgcn, rank, vote_rgcn.
+  mode: "plugrag_full"
+  top_k: 20
+
+rgcn_training:
+  # Used by train_plugrag_rgcn_encoder.py and GraphRAG.train_rgcn().
+  # convert_data=true converts the current Nano graph and entity vectors to data_file first.
+  # Set convert_data=false to reuse an existing .pt graph training file.
+  convert_data: true
+  data_file: "rgcn/rgcn_data.pt"
+  output_file: "rgcn/rgcn_embeddings.pt"
+  mapping_file: "rgcn/rgcn_embeddings_mapping.json"
+  hidden_dim: 512
+  num_layers: 3
+  num_bases: 10
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping: 20
+  alpha: 0.8
+  beta: 0.2
+  mse_scale: 500.0
+  seed: 42
+
+gcn_training:
+  # Used by train_simple_gcn_ablation.py and GraphRAG.train_gcn().
+  # To run the Simple GCN ablation query, keep mode=plugrag_full and point
+  # storage.rgcn_embeddings_file / storage.rgcn_mapping_file to these GCN files.
+  convert_data: true
+  data_file: "gcn/gcn_data.pt"
+  output_file: "gcn/gcn_embeddings.pt"
+  mapping_file: "gcn/gcn_embeddings_mapping.json"
+  hidden_dim: 512
+  num_layers: 3
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping: 20
+  alpha: 0.8
+  beta: 0.2
+  mse_scale: 50.0
+  seed: 42
+
+multi_edge_rgcn_transe_training:
+  # Multi-edge GCN ablation with relation embeddings and TransE-style loss.
+  convert_data: true
+  data_file: "multi_edge/multi_edge_rgcn_data.pt"
+  output_file: "multi_edge/rgcn_transe_embeddings.pt"
+  mapping_file: "multi_edge/rgcn_transe_mapping.json"
+  hidden_dim: 512
+  num_layers: 3
+  num_bases: 10
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping: 30
+  alpha: 0.8
+  beta: 0.2
+  mse_scale: 50.0
+  margin: 1.0
+  seed: 42

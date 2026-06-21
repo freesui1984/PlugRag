@@ -1,0 +1,34 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Local configuration and secrets
+.env
+.env.*
+config.local.yaml
+config_local.yaml
+secrets.*
+credentials.*
+
+# Generated experiment artifacts
+work_dir*/
+*.pt
+*.pth
+*.ckpt
+*.best
+*.best.pt
+*.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,14 @@
+openai:
+  model: "gpt-4o-mini"
+  api_key: ""
+  base_url: "https://api.openai.com/v1"
+
+glm:
+  model: "glm-4-plus"
+  api_key: ""
+  base_url: "https://open.bigmodel.cn/api/paas/v4"
+
+deepseek:
+  model: "deepseek-chat"
+  api_key: ""
+  base_url: "https://api.deepseek.com"

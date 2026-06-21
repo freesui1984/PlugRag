@@ -1,0 +1,208 @@
+# PlugRag
+
+**PlugRag: A Plug-and-Play Graph Retrieval Enhancement Method Integrating Semantic and Structural Representations**
+
+[English README](README.md)
+
+PlugRag 是一个面向 KG-enhanced RAG 的插件式实体级图检索增强方法。它不改变底层 RAG 框架原有的索引、图构建和答案生成流程，而是在实体检索与上下文组织阶段加入语义-结构联合表示、结构化实体召回、混合排序和结构溯源路径，从而提升结构证据组织能力。
+
+<p align="center">
+  <img src="assets/figure2-plugrag-overview.png" alt="PlugRag overview" width="900">
+</p>
+
+## 工作简介
+
+现有 KG-enhanced RAG 方法通常依赖语义相似度、邻居扩展或路径搜索进行实体召回。这类方法能够利用图结构补充证据，但也容易引入弱相关邻居、冗余路径，或者遗漏关键中间实体。PlugRag 的目标不是替换 HiRAG 或 Nano-GraphRAG，而是作为一个可插拔增强层接入这些框架。
+
+PlugRag 的核心思想包括：
+
+- **语义-结构联合表示**：使用实体名称和描述的文本 embedding 作为初始表示，并通过 GCN / R-GCN 注入图拓扑与关系类型信息。
+- **结构化实体召回**：以高置信语义实体作为种子，在图编码器表示空间中扩展结构相关实体。
+- **混合排序**：结合语义过滤、结构投票频率和 Cross-Encoder reranking，抑制结构扩展带来的噪声。
+- **结构溯源路径**：为结构扩展实体生成从语义种子到目标实体的关系路径，使上下文来源更可解释。
+
+## 目录结构
+
+```text
+github_code_release_20260619/
+├── HiRAG-PlugRag/
+│   ├── hirag/
+│   ├── evel/
+│   ├── config.example.yaml
+│   ├── environment.yml
+│   └── readme.md
+├── Nano-GraphRAG-PlugRag/
+│   ├── nano_graphrag/
+│   ├── evel/
+│   ├── config_example.yaml
+│   ├── environment.yml
+│   └── readme.md
+└── assets/
+    └── figure2-plugrag-overview.png
+```
+
+HiRAG 和 Nano-GraphRAG 两个子目录可以分别运行。更具体的依赖、配置和命令见各自目录下的 `readme.md`。
+
+## 无侵入式接入
+
+PlugRag 的接入方式是无侵入式的：
+
+- 保留原始框架的文档切分、实体关系抽取、知识图谱构建和 LLM 生成流程。
+- 不要求重写 HiRAG / Nano-GraphRAG 的全局检索逻辑。
+- 只在实体级 local retrieval 与 context construction 阶段加入增强模块。
+- 图编码器训练结果通过 YAML 配置和 checkpoint 路径选择，不需要把 R-GCN / GCN / Multi-edge GCN 拆成多个复杂查询入口。
+
+发布版统一保留三个正式查询模式：
+
+- `plugrag_full`：完整 PlugRag，包含结构扩展、混合排序和 trace/path 上下文。
+- `plugrag_rank_only`：语义排序消融，不使用图编码器结构扩展。
+- `plugrag_vote_only`：结构投票消融，不使用语义融合重排。
+
+## 安装
+
+推荐 Python 3.10。
+
+HiRAG 版本：
+
+```bash
+cd HiRAG-PlugRag
+conda env create -f environment.yml
+conda activate plugrag-hirag
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+pip install -e .
+```
+
+Nano-GraphRAG 版本：
+
+```bash
+cd Nano-GraphRAG-PlugRag
+conda env create -f environment.yml
+conda activate plugrag-nano
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+pip install -e .
+```
+
+如果需要 CUDA 版本 PyTorch，请先按本机 CUDA 版本安装 PyTorch，再安装 `requirements.txt`。Nano 的 HNSW、Ollama、Qdrant、Milvus、DSPy 等扩展依赖放在 `requirements-optional.txt` 中。
+
+## 配置
+
+运行前请复制配置文件并填写 API 信息：
+
+```bash
+cp HiRAG-PlugRag/config.example.yaml HiRAG-PlugRag/config.local.yaml
+cp Nano-GraphRAG-PlugRag/config_example.yaml Nano-GraphRAG-PlugRag/config_local.yaml
+```
+
+Windows PowerShell：
+
+```powershell
+copy HiRAG-PlugRag/config.example.yaml HiRAG-PlugRag/config.local.yaml
+copy Nano-GraphRAG-PlugRag/config_example.yaml Nano-GraphRAG-PlugRag/config_local.yaml
+$env:OPENAI_API_KEY="your_api_key"
+$env:OPENAI_BASE_URL="https://api.siliconflow.cn/v1"
+```
+
+论文实验中使用 BGE-M3 作为初始实体语义表示，使用 R-GCN / Simple GCN / Multi-edge R-GCN+TransE 作为图编码器变体，使用 BGE-Reranker-v2-M3 进行 reranking。
+
+## 训练
+
+HiRAG 从 GraphML 转换训练数据：
+
+```bash
+cd HiRAG-PlugRag
+python -m hirag.convert_graphml_to_rgcn_data --input work_dir_data_mix/graph_chunk_entity_relation_02.graphml --output work_dir_data_mix/rgcn/rgcn_data.pt
+python -m hirag.convert_graphml_to_simple_gcn_data --input work_dir_data_mix/graph_chunk_entity_relation_02.graphml --output work_dir_data_mix/gcn/gcn_data.pt
+python -m hirag.convert_graphml_to_multi_edge_rgcn_data --input work_dir_data_mix/graph_chunk_entity_relation_02.graphml --output work_dir_data_mix/multi_edge/multi_edge_rgcn_data.pt
+```
+
+HiRAG 训练图编码器：
+
+```bash
+python -m hirag.train_plugrag_rgcn_encoder
+python -m hirag.train_simple_gcn_ablation
+python -m hirag.train_multi_edge_rgcn_transe_ablation
+```
+
+Nano-GraphRAG 转换训练数据：
+
+```bash
+cd Nano-GraphRAG-PlugRag
+python prepare_plugrag_training_data.py --config config_example.yaml --encoder all
+```
+
+Nano-GraphRAG 训练图编码器：
+
+```bash
+python train_plugrag_rgcn_encoder.py --config config_example.yaml
+python train_simple_gcn_ablation.py --config config_example.yaml
+python train_multi_edge_rgcn_transe_ablation.py --config config_example.yaml
+```
+
+## 批量问答
+
+批量问答由 YAML 中的 `batch_query` 控制：
+
+```yaml
+batch_query:
+  input_file: "queries.jsonl"
+  output_file: "answers.jsonl"
+  concurrency: 5
+  mode: "plugrag_full"
+  graph_encoder: "rgcn"
+  top_k: 20
+```
+
+HiRAG：
+
+```bash
+cd HiRAG-PlugRag
+python hi_batch_query.py
+```
+
+Nano-GraphRAG：
+
+```bash
+cd Nano-GraphRAG-PlugRag
+python hi_batch_query.py
+```
+
+消融实验只需要切换 `mode` 或图编码器路径。例如，Simple GCN 消融仍然使用 `plugrag_full`。HiRAG 可通过 `batch_query.graph_encoder: "simple_gcn"` 切换；Nano 可将 `storage.rgcn_embeddings_file` 和 `storage.rgcn_mapping_file` 指向 Simple GCN 文件。
+
+## 评测
+
+实验使用 [UltraDomain](https://huggingface.co/datasets/TommyChien/UltraDomain) 的四个子集：
+
+- Mix
+- CS
+- Legal
+- Agriculture
+
+发布版中，HiRAG 和 Nano-GraphRAG 的评测数据分别放在：
+
+```text
+HiRAG-PlugRag/evel/
+Nano-GraphRAG-PlugRag/evel/
+```
+
+每个数据集目录只保留 JSONL 发布文件：queries、answers 和 OpenAI/LLM-as-a-judge 结果文件。评测脚本保留论文实验使用的原始 `batch_eval.py`：
+
+```bash
+python evel/evaluation_code/batch_eval.py --help
+```
+
+评测维度包括 Comprehensiveness、Empowerment、Diversity 和 Overall Winner。论文实验采用双向位置交换的 pairwise evaluation，以缓解 Answer 1 / Answer 2 的位置偏差。
+
+## 主要发现
+
+在 UltraDomain 的四个子集上，PlugRag 在多数设置中带来正向但相对温和的提升。R-GCN 变体在 HiRAG 和 Nano-GraphRAG 两个 backbone 上表现相对稳定；Simple GCN 和 Multi-edge GCN 的效果更依赖具体数据集结构、关系标签质量和图连通性。消融实验显示，语义-结构表示、混合排序和结构溯源路径对降低结构噪声、改善证据组织有帮助。
+
+## 致谢
+
+本仓库基于并感谢以下开源项目：
+
+- [hhy-huang/HiRAG](https://github.com/hhy-huang/HiRAG)
+- [gusye1234/nano-graphrag](https://github.com/gusye1234/nano-graphrag)
+
+同时感谢 [UltraDomain](https://huggingface.co/datasets/TommyChien/UltraDomain) 数据集的贡献者。

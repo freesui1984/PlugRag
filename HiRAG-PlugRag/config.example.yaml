@@ -1,0 +1,121 @@
+# PlugRag HiRAG reproducibility config.
+# Copy this file to your own config path, then set PLUGRAG_CONFIG to that path.
+
+openai:
+  # Used for both answer generation and BGE-compatible remote embeddings.
+  model: "deepseek-ai/DeepSeek-V3"
+  embedding_model: "BAAI/bge-m3"
+  api_key: ""
+  base_url: "https://api.siliconflow.cn/v1"
+
+glm:
+  model: "glm-4-plus"
+  embedding_model: "embedding-3"
+  api_key: ""
+  base_url: "https://open.bigmodel.cn/api/paas/v4"
+
+deepseek:
+  model: "deepseek-chat"
+  api_key: ""
+  base_url: "https://api.deepseek.com"
+
+model_params:
+  # BAAI/bge-m3 through SiliconFlow returns 1024-dimensional embeddings.
+  openai_embedding_dim: 1024
+  glm_embedding_dim: 2048
+  max_token_size: 8192
+
+rerank:
+  # Used by plugrag_full and plugrag_rank_only for entity reranking.
+  # Leave api_key empty for GitHub; prefer RERANK_API_KEY or OPENAI_API_KEY.
+  api_key: ""
+  base_url: "https://api.siliconflow.cn/v1"
+  model: "BAAI/bge-reranker-v2-m3"
+
+hirag:
+  # The directory containing HiRAG graph/vector/cache files.
+  working_dir: "work_dir_data_mix"
+  enable_llm_cache: false
+  enable_hierachical_mode: true
+  enable_naive_rag: true
+  embedding_batch_num: 4
+  embedding_func_max_async: 6
+  max_clusters: 20
+
+batch_query:
+  # Optional defaults for hi_batch_query.py. Environment variables override these.
+  # Main modes: plugrag_full, plugrag_rank_only, plugrag_vote_only.
+  input_file: "queries.jsonl"
+  output_file: "answers.jsonl"
+  concurrency: 5
+  mode: "plugrag_full"
+  # Which trained graph encoder embeddings to load for PlugRag queries.
+  # Use rgcn, simple_gcn, multi_edge_rgcn_transe, or none.
+  # GCN ablations still run through plugrag_full; only this encoder changes.
+  graph_encoder: "rgcn"
+  top_k: 20
+
+rgcn:
+  # Main PlugRag graph encoder.
+  convert:
+    graphml_input: "work_dir_data_mix/graph_chunk_entity_relation_02.graphml"
+    pt_output: "work_dir_data_mix/rgcn/rgcn_data.pt"
+    embedding_model: "BAAI/bge-m3"
+    batch_size: 20
+  training:
+    input_pt: "work_dir_data_mix/rgcn/rgcn_data.pt"
+    output_pt: "work_dir_data_mix/rgcn/rgcn_embeddings.pt"
+    hidden_dim: 512
+    num_layers: 3
+    num_bases: 10
+    learning_rate: 0.001
+    epochs: 2000
+    early_stopping: 30
+    alpha: 0.8
+    beta: 0.2
+    mse_scale: 50.0
+    margin: 1.0
+    seed: 42
+
+gcn:
+  # Simple GCN ablation. Use the same GraphML input but save homogeneous data.
+  convert:
+    graphml_input: "work_dir_data_mix/graph_chunk_entity_relation_02.graphml"
+    pt_output: "work_dir_data_mix/gcn/gcn_data.pt"
+    embedding_model: "BAAI/bge-m3"
+    batch_size: 20
+  training:
+    input_pt: "work_dir_data_mix/gcn/gcn_data.pt"
+    output_pt: "work_dir_data_mix/gcn/gcn_embeddings.pt"
+    hidden_dim: 512
+    num_layers: 3
+    learning_rate: 0.001
+    epochs: 2000
+    early_stopping: 30
+    alpha: 0.8
+    beta: 0.2
+    mse_scale: 50.0
+    margin: 1.0
+    seed: 42
+
+multi_edge_rgcn_transe:
+  # Multi-edge / relation-aware ablation with TransE-style structural loss.
+  convert:
+    graphml_input: "work_dir_data_mix/graph_chunk_entity_relation_02.graphml"
+    pt_output: "work_dir_data_mix/multi_edge/multi_edge_rgcn_data.pt"
+    embedding_model: "BAAI/bge-m3"
+    batch_size: 20
+  training:
+    input_pt: "work_dir_data_mix/multi_edge/multi_edge_rgcn_data.pt"
+    output_pt: "work_dir_data_mix/multi_edge/rgcn_transe_embeddings.pt"
+    hidden_dim: 512
+    num_layers: 3
+    num_bases: 10
+    learning_rate: 0.001
+    epochs: 2000
+    early_stopping: 30
+    alpha: 0.8
+    beta: 0.2
+    mse_scale: 50.0
+    margin: 1.0
+    seed: 42
