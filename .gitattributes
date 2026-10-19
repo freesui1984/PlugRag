@@ -1,0 +1,2 @@
+# Preserve the exact bytes referenced by paper_results/files.json on every OS.
+paper_results/raw/** -text whitespace=cr-at-eol

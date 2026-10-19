@@ -4,6 +4,14 @@
 
 [Chinese README](README_zh.md)
 
+## Revised paper experiments
+
+The revised-paper result mapping, offline verification, and PPR/PathRAG-style
+comparison code are documented in [paper_results](paper_results/README.md).
+Use that mapping for the updated main results rather than older `evel/` batches.
+Read the [release audit boundaries](paper_results/RELEASE_NOTES.md) before making
+claims about exact historical run configurations or end-to-end reproducibility.
+
 PlugRag is a plug-and-play entity-level graph retrieval enhancement method for KG-enhanced retrieval-augmented generation. It does not replace the indexing, graph construction, or generation workflow of the host RAG framework. Instead, it adds semantic-structural entity representations, structured entity recall, hybrid ranking, and structural trace paths during entity retrieval and context construction.
 
 <p align="center">

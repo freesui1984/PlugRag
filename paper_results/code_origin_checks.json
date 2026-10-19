@@ -1,0 +1,69 @@
+{
+  "upstream_base": "958be2303504dff2a3a413f498892beb22fa9914",
+  "checks": [
+    {
+      "released_file": "HiRAG-PlugRag/hirag/ppr_top3.py",
+      "definition": "_get_ppr_config",
+      "source_file": "HiRAG-PlugRag/hirag/_op.py",
+      "ast_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/ppr_top3.py",
+      "definition": "_score_from_vector_hit",
+      "source_file": "HiRAG-PlugRag/hirag/_op.py",
+      "ast_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/ppr_top3.py",
+      "definition": "_build_numeric_ppr_graph",
+      "source_file": "HiRAG-PlugRag/hirag/_op.py",
+      "ast_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/ppr_top3.py",
+      "definition": "_find_ppr_related_edges_from_entities",
+      "source_file": "HiRAG-PlugRag/hirag/_op.py",
+      "ast_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/ppr_top3.py",
+      "definition": "_build_ppr_top3_query_context",
+      "source_file": "HiRAG-PlugRag/hirag/_op.py",
+      "ast_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/ppr_top3.py",
+      "definition": "ppr_graph_top3_query",
+      "source_file": "HiRAG-PlugRag/hirag/_op.py",
+      "ast_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/pathrag_evidence.py",
+      "source_file": "HiRAG-PlugRag/hirag/pathrag_evidence.py",
+      "all_definition_asts_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/pathrag_evidence_aligned.py",
+      "source_file": "HiRAG-PlugRag/hirag/pathrag_evidence_aligned.py",
+      "all_definition_asts_equal": true
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/_op.py",
+      "definition": "_rgcn_expand_entities",
+      "active_local_ast_equal": true,
+      "note": "No algorithm edit in this release"
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/_op.py",
+      "definition": "plugrag_full_query",
+      "active_local_ast_equal": true,
+      "note": "No algorithm edit in this release"
+    },
+    {
+      "released_file": "HiRAG-PlugRag/hirag/_op.py",
+      "definition": "_build_rgcn_query_context",
+      "active_local_ast_equal": false,
+      "note": "Optional later theme fusion is deliberately omitted"
+    }
+  ]
+}

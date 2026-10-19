@@ -1,0 +1,2408 @@
+{
+  "files_verified": 184,
+  "comparisons_verified": 88,
+  "paper_percentages_verified": 188,
+  "comparisons": [
+    {
+      "id": "HiRAG/R-GCN/vs-native",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Empowerment": {
+          "wins": 144,
+          "judgments": 260,
+          "percent": "55.38"
+        },
+        "Diversity": {
+          "wins": 143,
+          "judgments": 260,
+          "percent": "55.00"
+        },
+        "Overall Winner": {
+          "wins": 146,
+          "judgments": 260,
+          "percent": "56.15"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/R-GCN/vs-native",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Empowerment": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Diversity": {
+          "wins": 114,
+          "judgments": 200,
+          "percent": "57.00"
+        },
+        "Overall Winner": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/R-GCN/vs-native",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Diversity": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Overall Winner": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/R-GCN/vs-native",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Empowerment": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Diversity": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Overall Winner": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Simple GCN/vs-native",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 128,
+          "judgments": 260,
+          "percent": "49.23"
+        },
+        "Empowerment": {
+          "wins": 120,
+          "judgments": 260,
+          "percent": "46.15"
+        },
+        "Diversity": {
+          "wins": 125,
+          "judgments": 260,
+          "percent": "48.08"
+        },
+        "Overall Winner": {
+          "wins": 122,
+          "judgments": 260,
+          "percent": "46.92"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Simple GCN/vs-native",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Empowerment": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Diversity": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        },
+        "Overall Winner": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Simple GCN/vs-native",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        },
+        "Empowerment": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Diversity": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Overall Winner": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Simple GCN/vs-native",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Diversity": {
+          "wins": 93,
+          "judgments": 200,
+          "percent": "46.50"
+        },
+        "Overall Winner": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Multi-edge GCN/vs-native",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Empowerment": {
+          "wins": 119,
+          "judgments": 260,
+          "percent": "45.77"
+        },
+        "Diversity": {
+          "wins": 116,
+          "judgments": 260,
+          "percent": "44.62"
+        },
+        "Overall Winner": {
+          "wins": 118,
+          "judgments": 260,
+          "percent": "45.38"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Multi-edge GCN/vs-native",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        },
+        "Empowerment": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Diversity": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Overall Winner": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Multi-edge GCN/vs-native",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Diversity": {
+          "wins": 117,
+          "judgments": 200,
+          "percent": "58.50"
+        },
+        "Overall Winner": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/Multi-edge GCN/vs-native",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Empowerment": {
+          "wins": 109,
+          "judgments": 200,
+          "percent": "54.50"
+        },
+        "Diversity": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Overall Winner": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/R-GCN/vs-native",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 146,
+          "judgments": 260,
+          "percent": "56.15"
+        },
+        "Empowerment": {
+          "wins": 136,
+          "judgments": 260,
+          "percent": "52.31"
+        },
+        "Diversity": {
+          "wins": 148,
+          "judgments": 260,
+          "percent": "56.92"
+        },
+        "Overall Winner": {
+          "wins": 145,
+          "judgments": 260,
+          "percent": "55.77"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/R-GCN/vs-native",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Empowerment": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Diversity": {
+          "wins": 117,
+          "judgments": 200,
+          "percent": "58.50"
+        },
+        "Overall Winner": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/R-GCN/vs-native",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Empowerment": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Diversity": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/R-GCN/vs-native",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        },
+        "Empowerment": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Diversity": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        },
+        "Overall Winner": {
+          "wins": 114,
+          "judgments": 200,
+          "percent": "57.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Simple GCN/vs-native",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 134,
+          "judgments": 260,
+          "percent": "51.54"
+        },
+        "Empowerment": {
+          "wins": 136,
+          "judgments": 260,
+          "percent": "52.31"
+        },
+        "Diversity": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Overall Winner": {
+          "wins": 140,
+          "judgments": 260,
+          "percent": "53.85"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Simple GCN/vs-native",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 93,
+          "judgments": 200,
+          "percent": "46.50"
+        },
+        "Empowerment": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        },
+        "Diversity": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Overall Winner": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Simple GCN/vs-native",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Empowerment": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        },
+        "Diversity": {
+          "wins": 117,
+          "judgments": 200,
+          "percent": "58.50"
+        },
+        "Overall Winner": {
+          "wins": 114,
+          "judgments": 200,
+          "percent": "57.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Simple GCN/vs-native",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        },
+        "Diversity": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        },
+        "Overall Winner": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Multi-edge GCN/vs-native",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 134,
+          "judgments": 260,
+          "percent": "51.54"
+        },
+        "Empowerment": {
+          "wins": 136,
+          "judgments": 260,
+          "percent": "52.31"
+        },
+        "Diversity": {
+          "wins": 125,
+          "judgments": 260,
+          "percent": "48.08"
+        },
+        "Overall Winner": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Multi-edge GCN/vs-native",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Diversity": {
+          "wins": 116,
+          "judgments": 200,
+          "percent": "58.00"
+        },
+        "Overall Winner": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Multi-edge GCN/vs-native",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 94,
+          "judgments": 200,
+          "percent": "47.00"
+        },
+        "Diversity": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        },
+        "Overall Winner": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/Multi-edge GCN/vs-native",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 94,
+          "judgments": 200,
+          "percent": "47.00"
+        },
+        "Diversity": {
+          "wins": 89,
+          "judgments": 200,
+          "percent": "44.50"
+        },
+        "Overall Winner": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/0/Nano-GraphRAG → HiRAG",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 122,
+          "judgments": 260,
+          "percent": "46.92"
+        },
+        "Empowerment": {
+          "wins": 111,
+          "judgments": 260,
+          "percent": "42.69"
+        },
+        "Diversity": {
+          "wins": 134,
+          "judgments": 260,
+          "percent": "51.54"
+        },
+        "Overall Winner": {
+          "wins": 115,
+          "judgments": 260,
+          "percent": "44.23"
+        }
+      }
+    },
+    {
+      "id": "controlled/0/Nano-GraphRAG → HiRAG",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 94,
+          "judgments": 200,
+          "percent": "47.00"
+        },
+        "Diversity": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Overall Winner": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        }
+      }
+    },
+    {
+      "id": "controlled/0/Nano-GraphRAG → HiRAG",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        },
+        "Empowerment": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        },
+        "Diversity": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        },
+        "Overall Winner": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        }
+      }
+    },
+    {
+      "id": "controlled/0/Nano-GraphRAG → HiRAG",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Empowerment": {
+          "wins": 93,
+          "judgments": 200,
+          "percent": "46.50"
+        },
+        "Diversity": {
+          "wins": 86,
+          "judgments": 200,
+          "percent": "43.00"
+        },
+        "Overall Winner": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/1/Nano-GraphRAG+PlugRag → HiRAG",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Empowerment": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        },
+        "Diversity": {
+          "wins": 140,
+          "judgments": 260,
+          "percent": "53.85"
+        },
+        "Overall Winner": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        }
+      }
+    },
+    {
+      "id": "controlled/1/Nano-GraphRAG+PlugRag → HiRAG",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Overall Winner": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/1/Nano-GraphRAG+PlugRag → HiRAG",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Empowerment": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        },
+        "Diversity": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Overall Winner": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/1/Nano-GraphRAG+PlugRag → HiRAG",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 121,
+          "judgments": 200,
+          "percent": "60.50"
+        },
+        "Empowerment": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Diversity": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Overall Winner": {
+          "wins": 115,
+          "judgments": 200,
+          "percent": "57.50"
+        }
+      }
+    },
+    {
+      "id": "controlled/2/HiRAG+PlugRag → PPR-based",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 140,
+          "judgments": 260,
+          "percent": "53.85"
+        },
+        "Empowerment": {
+          "wins": 143,
+          "judgments": 260,
+          "percent": "55.00"
+        },
+        "Diversity": {
+          "wins": 142,
+          "judgments": 260,
+          "percent": "54.62"
+        },
+        "Overall Winner": {
+          "wins": 145,
+          "judgments": 260,
+          "percent": "55.77"
+        }
+      }
+    },
+    {
+      "id": "controlled/2/HiRAG+PlugRag → PPR-based",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Empowerment": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        },
+        "Diversity": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Overall Winner": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/2/HiRAG+PlugRag → PPR-based",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 116,
+          "judgments": 200,
+          "percent": "58.00"
+        },
+        "Empowerment": {
+          "wins": 117,
+          "judgments": 200,
+          "percent": "58.50"
+        },
+        "Diversity": {
+          "wins": 128,
+          "judgments": 200,
+          "percent": "64.00"
+        },
+        "Overall Winner": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/2/HiRAG+PlugRag → PPR-based",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Empowerment": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        },
+        "Diversity": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Overall Winner": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/3/HiRAG+PlugRag → PathRAG-style",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 144,
+          "judgments": 260,
+          "percent": "55.38"
+        },
+        "Empowerment": {
+          "wins": 154,
+          "judgments": 260,
+          "percent": "59.23"
+        },
+        "Diversity": {
+          "wins": 145,
+          "judgments": 260,
+          "percent": "55.77"
+        },
+        "Overall Winner": {
+          "wins": 149,
+          "judgments": 260,
+          "percent": "57.31"
+        }
+      }
+    },
+    {
+      "id": "controlled/3/HiRAG+PlugRag → PathRAG-style",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 109,
+          "judgments": 200,
+          "percent": "54.50"
+        },
+        "Empowerment": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        },
+        "Diversity": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Overall Winner": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        }
+      }
+    },
+    {
+      "id": "controlled/3/HiRAG+PlugRag → PathRAG-style",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 128,
+          "judgments": 200,
+          "percent": "64.00"
+        },
+        "Empowerment": {
+          "wins": 141,
+          "judgments": 200,
+          "percent": "70.50"
+        },
+        "Diversity": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        },
+        "Overall Winner": {
+          "wins": 133,
+          "judgments": 200,
+          "percent": "66.50"
+        }
+      }
+    },
+    {
+      "id": "controlled/3/HiRAG+PlugRag → PathRAG-style",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        },
+        "Empowerment": {
+          "wins": 129,
+          "judgments": 200,
+          "percent": "64.50"
+        },
+        "Diversity": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Overall Winner": {
+          "wins": 122,
+          "judgments": 200,
+          "percent": "61.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 140,
+          "judgments": 260,
+          "percent": "53.85"
+        },
+        "Empowerment": {
+          "wins": 138,
+          "judgments": 260,
+          "percent": "53.08"
+        },
+        "Diversity": {
+          "wins": 129,
+          "judgments": 260,
+          "percent": "49.62"
+        },
+        "Overall Winner": {
+          "wins": 136,
+          "judgments": 260,
+          "percent": "52.31"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Empowerment": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Diversity": {
+          "wins": 94,
+          "judgments": 200,
+          "percent": "47.00"
+        },
+        "Overall Winner": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        },
+        "Empowerment": {
+          "wins": 109,
+          "judgments": 200,
+          "percent": "54.50"
+        },
+        "Diversity": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        },
+        "Overall Winner": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 92,
+          "judgments": 200,
+          "percent": "46.00"
+        },
+        "Diversity": {
+          "wins": 94,
+          "judgments": 200,
+          "percent": "47.00"
+        },
+        "Overall Winner": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 132,
+          "judgments": 260,
+          "percent": "50.77"
+        },
+        "Empowerment": {
+          "wins": 142,
+          "judgments": 260,
+          "percent": "54.62"
+        },
+        "Diversity": {
+          "wins": 146,
+          "judgments": 260,
+          "percent": "56.15"
+        },
+        "Overall Winner": {
+          "wins": 142,
+          "judgments": 260,
+          "percent": "54.62"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Diversity": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        },
+        "Overall Winner": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Empowerment": {
+          "wins": 95,
+          "judgments": 200,
+          "percent": "47.50"
+        },
+        "Diversity": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Overall Winner": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Diversity": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Overall Winner": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 132,
+          "judgments": 260,
+          "percent": "50.77"
+        },
+        "Empowerment": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        },
+        "Diversity": {
+          "wins": 146,
+          "judgments": 260,
+          "percent": "56.15"
+        },
+        "Overall Winner": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 94,
+          "judgments": 200,
+          "percent": "47.00"
+        },
+        "Overall Winner": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        },
+        "Empowerment": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Diversity": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Overall Winner": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Multi-edge GCN",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 115,
+          "judgments": 200,
+          "percent": "57.50"
+        },
+        "Overall Winner": {
+          "wins": 109,
+          "judgments": 200,
+          "percent": "54.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Empowerment": {
+          "wins": 129,
+          "judgments": 260,
+          "percent": "49.62"
+        },
+        "Diversity": {
+          "wins": 117,
+          "judgments": 260,
+          "percent": "45.00"
+        },
+        "Overall Winner": {
+          "wins": 132,
+          "judgments": 260,
+          "percent": "50.77"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Diversity": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        },
+        "Overall Winner": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Empowerment": {
+          "wins": 93,
+          "judgments": 200,
+          "percent": "46.50"
+        },
+        "Diversity": {
+          "wins": 88,
+          "judgments": 200,
+          "percent": "44.00"
+        },
+        "Overall Winner": {
+          "wins": 92,
+          "judgments": 200,
+          "percent": "46.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Simple GCN",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Diversity": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ w/o Trace",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 130,
+          "judgments": 260,
+          "percent": "50.00"
+        },
+        "Empowerment": {
+          "wins": 142,
+          "judgments": 260,
+          "percent": "54.62"
+        },
+        "Diversity": {
+          "wins": 141,
+          "judgments": 260,
+          "percent": "54.23"
+        },
+        "Overall Winner": {
+          "wins": 138,
+          "judgments": 260,
+          "percent": "53.08"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ w/o Trace",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        },
+        "Overall Winner": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ w/o Trace",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 114,
+          "judgments": 200,
+          "percent": "57.00"
+        },
+        "Empowerment": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Diversity": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Overall Winner": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ w/o Trace",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 95,
+          "judgments": 200,
+          "percent": "47.50"
+        },
+        "Empowerment": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Diversity": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Overall Winner": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/w/o Trace → Original",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 130,
+          "judgments": 260,
+          "percent": "50.00"
+        },
+        "Empowerment": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        },
+        "Diversity": {
+          "wins": 138,
+          "judgments": 260,
+          "percent": "53.08"
+        },
+        "Overall Winner": {
+          "wins": 136,
+          "judgments": 260,
+          "percent": "52.31"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/w/o Trace → Original",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Empowerment": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Diversity": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/w/o Trace → Original",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Diversity": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        },
+        "Overall Winner": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/w/o Trace → Original",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 97,
+          "judgments": 200,
+          "percent": "48.50"
+        },
+        "Overall Winner": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ w/o Trace",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 128,
+          "judgments": 260,
+          "percent": "49.23"
+        },
+        "Empowerment": {
+          "wins": 130,
+          "judgments": 260,
+          "percent": "50.00"
+        },
+        "Diversity": {
+          "wins": 132,
+          "judgments": 260,
+          "percent": "50.77"
+        },
+        "Overall Winner": {
+          "wins": 126,
+          "judgments": 260,
+          "percent": "48.46"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ w/o Trace",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Overall Winner": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ w/o Trace",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Diversity": {
+          "wins": 96,
+          "judgments": 200,
+          "percent": "48.00"
+        },
+        "Overall Winner": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ w/o Trace",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Empowerment": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Diversity": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        },
+        "Overall Winner": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/w/o Trace → Original",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Empowerment": {
+          "wins": 139,
+          "judgments": 260,
+          "percent": "53.46"
+        },
+        "Diversity": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Overall Winner": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/w/o Trace → Original",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Empowerment": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Diversity": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Overall Winner": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/w/o Trace → Original",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Empowerment": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        },
+        "Diversity": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        },
+        "Overall Winner": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/w/o Trace → Original",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Empowerment": {
+          "wins": 98,
+          "judgments": 200,
+          "percent": "49.00"
+        },
+        "Diversity": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Overall Winner": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Rank",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 133,
+          "judgments": 260,
+          "percent": "51.15"
+        },
+        "Empowerment": {
+          "wins": 132,
+          "judgments": 260,
+          "percent": "50.77"
+        },
+        "Diversity": {
+          "wins": 134,
+          "judgments": 260,
+          "percent": "51.54"
+        },
+        "Overall Winner": {
+          "wins": 133,
+          "judgments": 260,
+          "percent": "51.15"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Rank",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Empowerment": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Diversity": {
+          "wins": 116,
+          "judgments": 200,
+          "percent": "58.00"
+        },
+        "Overall Winner": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Rank",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 101,
+          "judgments": 200,
+          "percent": "50.50"
+        },
+        "Empowerment": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Diversity": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Overall Winner": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Rank",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Diversity": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        },
+        "Overall Winner": {
+          "wins": 106,
+          "judgments": 200,
+          "percent": "53.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Vote",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 127,
+          "judgments": 260,
+          "percent": "48.85"
+        },
+        "Empowerment": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        },
+        "Diversity": {
+          "wins": 130,
+          "judgments": 260,
+          "percent": "50.00"
+        },
+        "Overall Winner": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Vote",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Empowerment": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        },
+        "Diversity": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Vote",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Empowerment": {
+          "wins": 112,
+          "judgments": 200,
+          "percent": "56.00"
+        },
+        "Diversity": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Overall Winner": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        }
+      }
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Vote",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 99,
+          "judgments": 200,
+          "percent": "49.50"
+        },
+        "Empowerment": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Diversity": {
+          "wins": 92,
+          "judgments": 200,
+          "percent": "46.00"
+        },
+        "Overall Winner": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Rank",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 131,
+          "judgments": 260,
+          "percent": "50.38"
+        },
+        "Empowerment": {
+          "wins": 137,
+          "judgments": 260,
+          "percent": "52.69"
+        },
+        "Diversity": {
+          "wins": 128,
+          "judgments": 260,
+          "percent": "49.23"
+        },
+        "Overall Winner": {
+          "wins": 130,
+          "judgments": 260,
+          "percent": "50.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Rank",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Empowerment": {
+          "wins": 103,
+          "judgments": 200,
+          "percent": "51.50"
+        },
+        "Diversity": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Overall Winner": {
+          "wins": 100,
+          "judgments": 200,
+          "percent": "50.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Rank",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 104,
+          "judgments": 200,
+          "percent": "52.00"
+        },
+        "Empowerment": {
+          "wins": 111,
+          "judgments": 200,
+          "percent": "55.50"
+        },
+        "Diversity": {
+          "wins": 92,
+          "judgments": 200,
+          "percent": "46.00"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Rank",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        },
+        "Empowerment": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Diversity": {
+          "wins": 108,
+          "judgments": 200,
+          "percent": "54.00"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Vote",
+      "dataset": "mix",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 129,
+          "judgments": 260,
+          "percent": "49.62"
+        },
+        "Empowerment": {
+          "wins": 127,
+          "judgments": 260,
+          "percent": "48.85"
+        },
+        "Diversity": {
+          "wins": 129,
+          "judgments": 260,
+          "percent": "49.62"
+        },
+        "Overall Winner": {
+          "wins": 127,
+          "judgments": 260,
+          "percent": "48.85"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Vote",
+      "dataset": "cs",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 109,
+          "judgments": 200,
+          "percent": "54.50"
+        },
+        "Empowerment": {
+          "wins": 118,
+          "judgments": 200,
+          "percent": "59.00"
+        },
+        "Diversity": {
+          "wins": 113,
+          "judgments": 200,
+          "percent": "56.50"
+        },
+        "Overall Winner": {
+          "wins": 116,
+          "judgments": 200,
+          "percent": "58.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Vote",
+      "dataset": "legal",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Empowerment": {
+          "wins": 117,
+          "judgments": 200,
+          "percent": "58.50"
+        },
+        "Diversity": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Overall Winner": {
+          "wins": 110,
+          "judgments": 200,
+          "percent": "55.00"
+        }
+      }
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Vote",
+      "dataset": "agriculture",
+      "metrics": {
+        "Comprehensiveness": {
+          "wins": 105,
+          "judgments": 200,
+          "percent": "52.50"
+        },
+        "Empowerment": {
+          "wins": 121,
+          "judgments": 200,
+          "percent": "60.50"
+        },
+        "Diversity": {
+          "wins": 102,
+          "judgments": 200,
+          "percent": "51.00"
+        },
+        "Overall Winner": {
+          "wins": 107,
+          "judgments": 200,
+          "percent": "53.50"
+        }
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "id": "HiRAG/R-GCN/vs-native",
+      "macro": "55.16",
+      "pooled": "55.23"
+    },
+    {
+      "id": "HiRAG/Simple GCN/vs-native",
+      "macro": "49.36",
+      "pooled": "49.19"
+    },
+    {
+      "id": "HiRAG/Multi-edge GCN/vs-native",
+      "macro": "51.10",
+      "pooled": "50.70"
+    },
+    {
+      "id": "Nano-GraphRAG/R-GCN/vs-native",
+      "macro": "55.44",
+      "pooled": "55.47"
+    },
+    {
+      "id": "Nano-GraphRAG/Simple GCN/vs-native",
+      "macro": "53.34",
+      "pooled": "53.37"
+    },
+    {
+      "id": "Nano-GraphRAG/Multi-edge GCN/vs-native",
+      "macro": "50.10",
+      "pooled": "50.12"
+    },
+    {
+      "id": "controlled/0/Nano-GraphRAG → HiRAG",
+      "macro": "47.31",
+      "pooled": "47.09"
+    },
+    {
+      "id": "controlled/1/Nano-GraphRAG+PlugRag → HiRAG",
+      "macro": "53.30",
+      "pooled": "53.26"
+    },
+    {
+      "id": "controlled/2/HiRAG+PlugRag → PPR-based",
+      "macro": "55.69",
+      "pooled": "55.70"
+    },
+    {
+      "id": "controlled/3/HiRAG+PlugRag → PathRAG-style",
+      "macro": "60.20",
+      "pooled": "60.00"
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Multi-edge GCN",
+      "macro": "51.83",
+      "pooled": "51.86"
+    },
+    {
+      "id": "HiRAG/ablation/R-GCN → Simple GCN",
+      "macro": "50.28",
+      "pooled": "50.58"
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Multi-edge GCN",
+      "macro": "52.55",
+      "pooled": "52.56"
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/R-GCN → Simple GCN",
+      "macro": "51.32",
+      "pooled": "51.28"
+    },
+    {
+      "id": "HiRAG/ablation/Full→ w/o Trace",
+      "macro": "52.89",
+      "pooled": "52.91"
+    },
+    {
+      "id": "HiRAG/ablation/w/o Trace → Original",
+      "macro": "51.95",
+      "pooled": "51.98"
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ w/o Trace",
+      "macro": "51.74",
+      "pooled": "51.51"
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/w/o Trace → Original",
+      "macro": "53.17",
+      "pooled": "53.14"
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Rank",
+      "macro": "53.04",
+      "pooled": "52.91"
+    },
+    {
+      "id": "HiRAG/ablation/Full→ Vote",
+      "macro": "52.47",
+      "pooled": "52.33"
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Rank",
+      "macro": "51.75",
+      "pooled": "51.63"
+    },
+    {
+      "id": "Nano-GraphRAG/ablation/Full→ Vote",
+      "macro": "53.84",
+      "pooled": "53.49"
+    }
+  ],
+  "boundary": "Numerical and file-integrity verification, not verification of historical model identity or bitwise regeneration."
+}

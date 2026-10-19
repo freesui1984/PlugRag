@@ -1,0 +1,1660 @@
+{
+  "files": [
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_baseline.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_baseline.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 345245,
+      "sha256": "3de35b88a8fe11af0c0203ddc0429863d634a37d86ae360d896ff08cb7b78d0b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 350853,
+      "sha256": "557c76a6c626543aafe3ab9d8d548c0a0ddd3b1111331e33b0a3b815ad3d060d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 352355,
+      "sha256": "89732a45b1e68ac49144dab0c249510c1c2557f5698796d3f78928ea4162e521"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 345287,
+      "sha256": "276aed43065958fd8bf677287da7e74585dbc17bd4c7d3b4dd7a9d4a20fa53ca"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_rank_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 345080,
+      "sha256": "7585f6b6880304fb088dc61d9243e4b5ee83db871dcb244840332a7548247645"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_vote_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 348606,
+      "sha256": "aa2ae9d529f8a415f38f33728a6c13fdc0cbd31425110de67464081315523d3c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_rgcn_no_trace.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_rgcn_no_trace.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 350330,
+      "sha256": "a95000e3d5a294635a49393ef446d99b32500a8dbbe3ecdd41369f6f6496cf4a"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_baseline.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_baseline.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 262220,
+      "sha256": "16da67f98d45d90df7b31895465c690f4789abd2edaf401c78ad7258dcb78a60"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 265463,
+      "sha256": "b6dd1a1001f77d1baa432d9cc37f4f08ae4428ecd16d9a963cb1588747a0952c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 264333,
+      "sha256": "53328d60064d046779285c461a4837646be380002f21b0a85ba9da7d40994b9e"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 265080,
+      "sha256": "6bd31530a7453e85c8b2acda2cb12c3faf261cab65c563bfc43e968c3dd2d879"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_rank_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 261934,
+      "sha256": "7930655f4ebedb0d7b02e713dcd0d84bbcc84ac0020b8feebef18421c39f330b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_vote_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 260655,
+      "sha256": "ca4177a328dbeaf17df32b5ef6fae1b30d803ae88eabd17fe0e0a66fc7543561"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_rgcn_no_trace.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_plugrag_rgcn_no_trace.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 261288,
+      "sha256": "60fecda943e33d275b782dce4c341e7a071ec27230138194732f77827bb6c83d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_baseline.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_baseline.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 285056,
+      "sha256": "4579cdd22a6fda459a79e300eeea9d7949ed4ddde9896096c8a876285f7d6814"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 291811,
+      "sha256": "b95aab57da7d4429cb00dcb338aab083d8180a119917c2011fbfba3de2f93e8d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 287411,
+      "sha256": "4df946135866b1b9a2dca7a2e3a0c4729a36ac1abf964a23c2873b4f998cb4dd"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 296623,
+      "sha256": "f74dae56c87b8e6597875eed59fb86c88a5bc8dec44f3c84840e1145ed82ac8a"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_rank_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 291124,
+      "sha256": "09fe4c38c45ee0907880672602fb0d86922626c1fe419ab6b1396347c090a12d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_vote_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 283958,
+      "sha256": "2de78b593ffc8fb9806d4c85c501ac69cd72d76b1687f9d2ddc1980f35880e4b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_rgcn_no_trace.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_plugrag_rgcn_no_trace.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 286271,
+      "sha256": "9ea6ee3a96fe62f36e5630fc0164e2de6854245afb8f0452e16e52aa85e5640b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_baseline.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_baseline.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 296768,
+      "sha256": "3ef6e81d392a877ee715ffbf8c204d0ae5deeecf030b042b463f8f98bdd5ed0f"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 302598,
+      "sha256": "4e4bbcc4d593308a609a00a8ef11dd56ec245f722d7e60449f8e3adb10ace59a"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 292634,
+      "sha256": "005d995610636b54fb04d5a26d7b1573ef4e0e82439a85a693478f246701a18e"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 301165,
+      "sha256": "191975311ee705548e69d6031766638751979e97d103bf74bfce8b4f507b7076"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_rank_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 293960,
+      "sha256": "15c21f5603ac9b3f04674888651d6fce9d190c6c5145cdd31c868b693fc98928"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_vote_only.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 303498,
+      "sha256": "4ce574e360ff6382c02174dd68666229657f47a261d736b116683b93a5f6dde9"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_rgcn_no_trace.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_plugrag_rgcn_no_trace.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 300572,
+      "sha256": "e63604061b42623964b0844da567e0629882faeef74f2d5c86786943e871dedb"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_baseline_graphrag.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_baseline_graphrag.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 358878,
+      "sha256": "ae60de42e6d7c0157896581ce8cdd25907a5ea77323d7089ee2b360a6dfcbc0f"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 361590,
+      "sha256": "aa6f20b56be2014b3728667bb566076be0695191b601e79b8b83a9108f0d606a"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_simple_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_simple_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 358815,
+      "sha256": "95270fdc0a4ccec91a11dc474c4b68f8cc9db0c317eb6d20586775b262c20a03"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 359891,
+      "sha256": "cc43b5abe31e45d61b28a2711b84d92b18f8fa03b5a4daa8ec6fddbf9de1c442"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_rank_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 361775,
+      "sha256": "f09186bb91dc810d4424c1d8ea740b0e6a5dc4e15b4ad83a5d434502ad491f28"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_vote_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 368342,
+      "sha256": "30f4a47d4cd1f1451c5a5ec8c042e9104247c6bac3f9e6e577a05d7f0d4d03ad"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_rgcn_no_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/answers/mix_nano_plugrag_rgcn_no_path.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 363454,
+      "sha256": "4b570bf38578d00eb8c22743dc17e8e82848559186a8e60a83321b36c3ad4a19"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_baseline_graphrag.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_baseline_graphrag.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 273328,
+      "sha256": "51a9b4614a3322ed9bc31e0b297572a3d4398e9683acc69c55030f53fafa1784"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 278761,
+      "sha256": "716f2e4b69c328b5c175ed14f6fd5fba04019b16423f12f4cecbe1006af61d1d"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_simple_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_simple_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 271544,
+      "sha256": "3e0e7f471e29d6ac523b7e14b20f1b65ccf77c6f8b16a2473f0624a94bf0a03e"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 277245,
+      "sha256": "a2e2477e23d4713c84f55d6881388638b6d1c2e48edf557828554db957a347c4"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_rank_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 276088,
+      "sha256": "c9d40baefe888908222836dc9ffe992339929e40719b49c6d9c11b2d0114ae90"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_vote_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 273854,
+      "sha256": "67d0331030581a5cd2a3d32f45db977ea6759b38586471b7df3713c22c9ab509"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_rgcn_no_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/answers/cs_nano_plugrag_rgcn_no_path.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 273827,
+      "sha256": "c009dee41a29645a491311f5ba09963dff86745aa87229af83a63abe6cd289f7"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_baseline_graphrag.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_baseline_graphrag.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 296453,
+      "sha256": "95ab98f60f1869f19dec5454a6ef9e3f06853eca356ea5adfea4df8e04a31047"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 294848,
+      "sha256": "61b45fb3b9467480e4180f5362bb5db1aaa888e1af864c9b022b697117495e85"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_simple_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_simple_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 299427,
+      "sha256": "98352ffe7e2645ecc8fa541f1c777174079c7e4ec9cda321a226046abcb1592a"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 288837,
+      "sha256": "32715d7f7f3c81ca96b2e0a39e5eaca00a9c38cc14ef8b20dd17896d6a1f879d"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_rank_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 300486,
+      "sha256": "d05c65701b0ac21f8a11676afae59c5a18a33e78f338c511c6d800c198a3986f"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_vote_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 288445,
+      "sha256": "ad50ecd741d49473761083fdf79cf21ed9549828590464de6b1cfc754906b478"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_rgcn_no_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/answers/legal_nano_plugrag_rgcn_no_path.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 300621,
+      "sha256": "805bb1f661fa3a936b93fc10af9f1c1aa7edf0f5742b62c7fd432619c2594698"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_baseline_graphrag.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_baseline_graphrag.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 313105,
+      "sha256": "ccd575979d4e9c7c28f7be2ce34b0d8bc393c5fcf6f1a35b382c5739f218491d"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 315787,
+      "sha256": "0e17874adcda781f521d4445d922310d971660723b57ee22ad54ad11b37a1ca3"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_simple_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_simple_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 309636,
+      "sha256": "1e796cb369b9ddf68f5b24a592808b593282da7429a8c9f9d5efcc751d3a8eb7"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_multi_edge_gcn_path.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 307602,
+      "sha256": "1d4956086dc3f01f5b81c77d7c9349b44a820886595affaa6e0f68557b50fa24"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_rank_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_rank_only.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 309147,
+      "sha256": "2da204c1cdf0736b4b92503c4794b5eeb0a24ca55773add042bc6defaa003f7a"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_vote_only.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_vote_only.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 310432,
+      "sha256": "a997e0312708c4d85baa7c5700afcdb380136c4795a7f501a87a3b65f323c330"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_rgcn_no_path.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_nano_plugrag_rgcn_no_path.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 312720,
+      "sha256": "b3f61c63da85833f1e49dda284da9c7cb626b045ca16df403453a87ba4ef270b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_baseline.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_baseline.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 345245,
+      "sha256": "3de35b88a8fe11af0c0203ddc0429863d634a37d86ae360d896ff08cb7b78d0b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 345287,
+      "sha256": "276aed43065958fd8bf677287da7e74585dbc17bd4c7d3b4dd7a9d4a20fa53ca"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_plugrag_rgcn_path.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_plugrag_rgcn_path.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 350853,
+      "sha256": "557c76a6c626543aafe3ab9d8d548c0a0ddd3b1111331e33b0a3b815ad3d060d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/answer/mix_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 352355,
+      "sha256": "89732a45b1e68ac49144dab0c249510c1c2557f5698796d3f78928ea4162e521"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/mix/mix_hirag_native_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/mix/mix_hirag_native_v3.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 345245,
+      "sha256": "3de35b88a8fe11af0c0203ddc0429863d634a37d86ae360d896ff08cb7b78d0b"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/mix/mix_nano_full_rgcn_path_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/mix/mix_nano_full_rgcn_path_v3.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 380093,
+      "sha256": "ce4d572be197b0099f85250a5fb1db5807d91082e7330aae4e8a2e23a8491d20"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/mix/mix_nano_native_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/mix/mix_nano_native_v3.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 366113,
+      "sha256": "a8a130274401b77e6afa036e11e53f4115224ede76473f46357f77e1e8107c48"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_ppr_top3_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_ppr_top3_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 348921,
+      "sha256": "33fa5772482bb737d081623dda96ba770c5f34a3ea8c802c7f5dcafd2f9bc662"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/pathrag_baseline_v3/answers/mix_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/pathrag_baseline_v3/answers/mix_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 340043,
+      "sha256": "2811b630f30ce60b11965dbaca93e341a7ce2bfec7c04f6a2c8cddc39082f06d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/queries/mix_query.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/queries/mix_query.jsonl",
+      "role": "queries",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 13854,
+      "sha256": "e3904947bccd501e726040c1c6fc0b72eef0aab839393d6a17a75c2baca847af"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/answers/cs_hirag_native_single_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/answers/cs_hirag_native_single_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 261625,
+      "sha256": "ddd073a2e021abe266c441ea678f343afba5b1b4ea2755c13a091a334f13dc37"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/answers/cs_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/answers/cs_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 265080,
+      "sha256": "6bd31530a7453e85c8b2acda2cb12c3faf261cab65c563bfc43e968c3dd2d879"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/answers/cs_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/answers/cs_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 264333,
+      "sha256": "53328d60064d046779285c461a4837646be380002f21b0a85ba9da7d40994b9e"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/answers/cs_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/answers/cs_plugrag_full_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 271294,
+      "sha256": "7cd24ffe533e7f4f9c0d10c7f2a0c21621d96cd016232d7f08ab58c482e13c62"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/cs/cs_hirag_native_single_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/cs/cs_hirag_native_single_v3.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 268792,
+      "sha256": "48b33305e5479f941ecc98a61ec27ac9779df8abc8070d84fb0d972cf080b366"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/cs/cs_nano_native_single_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/cs/cs_nano_native_single_v3.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 285401,
+      "sha256": "ed64cc8806f6596f2d10dd8c8cba9af85426620932c36c244ed66d220e361185"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/cs/cs_nano_plugrag_full_rgcn_path_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/cs/cs_nano_plugrag_full_rgcn_path_v3.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 278761,
+      "sha256": "716f2e4b69c328b5c175ed14f6fd5fba04019b16423f12f4cecbe1006af61d1d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_ppr_top3_siliconflow_v3_100_20260731.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/answers/cs_hirag_ppr_top3_siliconflow_v3_100_20260731.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 273244,
+      "sha256": "6660879943ff3ef3b5fbf00fff0f3796ef6b385ec485647d8378c2577b32c9d2"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/pathrag_baseline_v3/answers/cs_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/pathrag_baseline_v3/answers/cs_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 255805,
+      "sha256": "469fbb48a0b0c8ff20ccf0d18ad4d675028561291812c08e5329192cc337e526"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/queries/cs_query.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/queries/cs_query.jsonl",
+      "role": "queries",
+      "dataset": "cs",
+      "rows": 100,
+      "bytes": 8752,
+      "sha256": "11b18324bbce0d3d3bd1f41ed2f5e858257552c5b32941152283b9dc5bc3517a"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/answers/legal_hirag_native_single_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/answers/legal_hirag_native_single_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 292341,
+      "sha256": "9f4be8548e6a4b7fe745dcd8550aae55cf205ac52fcf670bbaf4c91da15ec995"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/answers/legal_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/answers/legal_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 296623,
+      "sha256": "f74dae56c87b8e6597875eed59fb86c88a5bc8dec44f3c84840e1145ed82ac8a"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/answers/legal_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/answers/legal_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 287411,
+      "sha256": "4df946135866b1b9a2dca7a2e3a0c4729a36ac1abf964a23c2873b4f998cb4dd"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/answers/legal_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/answers/legal_plugrag_full_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 300025,
+      "sha256": "519faaa1eea2b2656f2ece3f5a0fde762c6f12c13c5aba55822bf16b14a6aaf2"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/legal/legal_hirag_native_single_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/legal/legal_hirag_native_single_v3.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 292341,
+      "sha256": "9f4be8548e6a4b7fe745dcd8550aae55cf205ac52fcf670bbaf4c91da15ec995"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/legal/legal_nano_full_rgcn_path_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/legal/legal_nano_full_rgcn_path_v3.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 294848,
+      "sha256": "61b45fb3b9467480e4180f5362bb5db1aaa888e1af864c9b022b697117495e85"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/legal/legal_nano_native_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/legal/legal_nano_native_v3.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 296453,
+      "sha256": "95ab98f60f1869f19dec5454a6ef9e3f06853eca356ea5adfea4df8e04a31047"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_ppr_top3_siliconflow_v3_100_20260731.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/answers/legal_hirag_ppr_top3_siliconflow_v3_100_20260731.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 279738,
+      "sha256": "5738e192906e186112b932ecd8fdfad53d665732979cad878790066e013bfbd3"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/pathrag_baseline_v3/answers/legal_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/pathrag_baseline_v3/answers/legal_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 268483,
+      "sha256": "47ad1719409e6e50b0c782ab91efe5742978b666756cd1dd75ec9326f86cff39"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/queries/legal_query.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/queries/legal_query.jsonl",
+      "role": "queries",
+      "dataset": "legal",
+      "rows": 100,
+      "bytes": 9271,
+      "sha256": "93031c166abb5cc3baf46f1bc8a3f783cd8ac5b27a394a2594b1a3d38b4c2fa6"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_hirag_native_single_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_hirag_native_single_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 298770,
+      "sha256": "fbcac0994c82cffa9eb4e24ec808a13d6288153407dc791cba4f7dc1706bb93f"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_hirag_plugrag_multi_edge_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_hirag_plugrag_multi_edge_gcn.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 301165,
+      "sha256": "191975311ee705548e69d6031766638751979e97d103bf74bfce8b4f507b7076"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_hirag_plugrag_simple_gcn.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_hirag_plugrag_simple_gcn.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 292634,
+      "sha256": "005d995610636b54fb04d5a26d7b1573ef4e0e82439a85a693478f246701a18e"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/answers/agriculture_plugrag_full_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 301676,
+      "sha256": "716fce32d659caf8e5f912532b7cad62c4032b9e4191c63654c8e4e16ececed2"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/agriculture/agriculture_hirag_native_single_bailian_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/agriculture/agriculture_hirag_native_single_bailian_v3.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 297832,
+      "sha256": "48717902497d73dd24f1b865442ae7959e471a4a762c0c59f5d34668901bab32"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/agriculture/agriculture_nano_full_rgcn_path_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/agriculture/agriculture_nano_full_rgcn_path_v3.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 315787,
+      "sha256": "0e17874adcda781f521d4445d922310d971660723b57ee22ad54ad11b37a1ca3"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/agriculture/agriculture_nano_native_single_bailian_v3.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/answers/agriculture/agriculture_nano_native_single_bailian_v3.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 307199,
+      "sha256": "2bdf158de239ce7c3069ec1dc8e8989b25115569f0c93302954ce761c8af873b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_ppr_top3_siliconflow_v3_100_20260730.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/answers/agriculture_hirag_ppr_top3_siliconflow_v3_100_20260730.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 297193,
+      "sha256": "61f94a60b0eae0c7ecd313afd1528b04ffc3ce6300b715af223f4aa185e88de8"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/pathrag_baseline_v3/answers/agriculture_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/pathrag_baseline_v3/answers/agriculture_pathrag_aligned_v3_siliconflow_v3.jsonl",
+      "role": "answers",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 283994,
+      "sha256": "629e5b12df3ea79bf0d6f63ff78a619f2d5164002b020d069cb6d19a85780a2d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/queries/agriculture_query.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/queries/agriculture_query.jsonl",
+      "role": "queries",
+      "dataset": "agriculture",
+      "rows": 100,
+      "bytes": 9560,
+      "sha256": "74932745541ad9d88cbb37ef97b08d03f4b6e9df55ebf14e7b12b13e1ec3693c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/mix_legacy_rgcn_full_vs_hirag_r1_recheck_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/mix_legacy_rgcn_full_vs_hirag_r1_recheck_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 489113,
+      "sha256": "ca123cb2c4b2f748fddcfb427bf50566604266e37bd15829a45cc7f5570e2109"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/cs_native_hirag_vs_full_r1_recheck_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/cs_native_hirag_vs_full_r1_recheck_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 357264,
+      "sha256": "9d42becb4bfb305cd4da7853b856037658c7fdb4f5ffa901ea79739769a831ae"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/legal_native_hirag_vs_full_r1_recheck_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/legal_native_hirag_vs_full_r1_recheck_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 379929,
+      "sha256": "353ff186fed1dd666ba8cc19fd17fd2aed6481cf4ba0435b161c1e3d71a0c97b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/agriculture_native_hirag_vs_rgcn_full_r1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/agriculture_native_hirag_vs_rgcn_full_r1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 377579,
+      "sha256": "1db1a087a2695960f690824d4aba2034cc8eb4e45a29c22e9837d517801b0959"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/simple_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/simple_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 492260,
+      "sha256": "05b6e0e893fcaeb5746f64a73494a6f8c669ecdc254bdf9751d6d0c52523dd2e"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/cs_simple_gcn_vs_native_single_siliconflow_R1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/cs_simple_gcn_vs_native_single_siliconflow_R1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 326052,
+      "sha256": "157bae58a08c89e34c33fc4eaff89573a2888c78e706b3c87292277d226d66c5"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/legal_simple_gcn_vs_native_hirag_siliconflow_R1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/legal_simple_gcn_vs_native_hirag_siliconflow_R1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 327224,
+      "sha256": "6186d23fa0b84d87e5d645cfb2b9d0bffcc5357c726ebf782239b4892861de56"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/agriculture_simple_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/agriculture_simple_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 379407,
+      "sha256": "27a4d9bf8642e81e1a84e59f0246d5c274beb63c33d0f36589160fad0eaa6fb2"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/mix/multi_edge_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/mix/multi_edge_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 478708,
+      "sha256": "b6d0974f32d78fe9f5bf5794737e2d5bf71014fdca835e83f0e9aa6367933c26"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/cs/cs_multi_edge_gcn_vs_native_single_siliconflow_R1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/cs/cs_multi_edge_gcn_vs_native_single_siliconflow_R1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 331792,
+      "sha256": "bf27866a68f2900392f3b4dd901f0454799eb8ed8c31f470d47e0d96e3bc946f"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/leagl/legal_multi_edge_gcn_vs_native_hirag_siliconflow_R1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/leagl/legal_multi_edge_gcn_vs_native_hirag_siliconflow_R1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 330650,
+      "sha256": "acd96bc5acc7051ab22fa1a63ab2b720cfded9aa9effd88a2c6aa821bb8586cb"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/eval/total/agriculture/agriculture_multi_edge_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/eval/total/agriculture/agriculture_multi_edge_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 387015,
+      "sha256": "14ca3158c63912463cd807124e824f2b3baa1f8657db7dade520d986c7038007"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nanofull_vs_nano_r1_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nanofull_vs_nano_r1_result.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 486664,
+      "sha256": "e3478b96c1fc506e84768063cd883a2231b9121110f6be78560de4d778b75400"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nanofull_vs_nano_r1_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nanofull_vs_nano_r1_result.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 328481,
+      "sha256": "33c706619fa2d72331a64b0f340da75443d5fa951f152f89bf8942dbd9478887"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nanofull_vs_nano_r1_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nanofull_vs_nano_r1_result.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 342383,
+      "sha256": "4176d0ed28aec572636b18eece9e58a82a1ea1b8278c01d3497c3438c53a4e48"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nanofull_vs_nano_r1_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nanofull_vs_nano_r1_result.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 448660,
+      "sha256": "70535e43b212f3e8f98aafd4fb0c64786c280e06cb3cfc504931b01fa463ae4d"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 433905,
+      "sha256": "328a837313da7a14ec3da8f2f3c75ba9f59e70c95c913687e1007201110b5cbf"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 366637,
+      "sha256": "f3c9b68f02198003904535448033c57b2f79fc1ea1209fed9cc50e6c5bc42f50"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 394821,
+      "sha256": "63c2c146c2de5d7b500f81077eb4707fbecadbb0865fcc21c96e0c7f09a34b57"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_simple_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 395088,
+      "sha256": "ee0b2ca8b1f3d1d79dcc69df35900bf8f2bbb0247dced1dc68514c2ba3ae1980"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 435526,
+      "sha256": "85c77560921c1bd44503829ca696356a35112de8618b6e8974884808bfa61e4c"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 336550,
+      "sha256": "f7f3d646bd406027a5e35616b6a5515c8989a5d2a09d95c1232341602956dd01"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 331996,
+      "sha256": "e34f018fda7bec7c7a97da2e2c394b7bce85221f5889212a086a14e140919bb9"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 336015,
+      "sha256": "4972ba47678354b9400f82f990e87069d2afda3ab5c90e2171eef39f72075eae"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nano_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nano_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 487048,
+      "sha256": "62e2d659ded9dd17cce3d20186080a5233ec3cf89e7221738bd575df9917b947"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nano_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nano_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 357665,
+      "sha256": "eb8a81bc8cc12d4e9b53880f3008f9e0b0d1ba735c20f3ccf09f739a68cbf72d"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nano_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nano_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 343112,
+      "sha256": "1ae83e6d2c8675adb6bd6a41a409e5f1ac0db4e8a080e9a59c48074b203518d0"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nano_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nano_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 434421,
+      "sha256": "237f06f17d5c1582f61ae164ef42423764011b21004b2b4b28709f4c06b736c9"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nanofull_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nanofull_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 484251,
+      "sha256": "69ed9bc5954cf27371da96253f43187c94b8c1c7999649248721aa5c998027eb"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nanofull_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nanofull_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 333924,
+      "sha256": "3a9b7d7fe947c31d6d2b91904c00252f235e695fc476e7ba63680c623d7a3be0"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nanofull_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nanofull_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 345992,
+      "sha256": "d6534dd66e4fea00dc59b02865144145646f1777824eec99c2571cb081c637fe"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nanofull_vs_hirag_v4pro_result.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nanofull_vs_hirag_v4pro_result.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 429874,
+      "sha256": "e6d7719dfaeab5c9cee4551ff95e3e44393a6fa3e04b507040270433d08b3a0a"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_full_v3_rerun_vs_ppr_v3_eval_v3_resume_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_full_v3_rerun_vs_ppr_v3_eval_v3_resume_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 429108,
+      "sha256": "50f8fa2a0d118feaa8c8a48c7d87c7c1a608afc409d844e8936335b6baaed7d3"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_ppr_top3_v3_100_vs_full_eval_sensenova_deepseek_20260731_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_ppr_top3_v3_100_vs_full_eval_sensenova_deepseek_20260731_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 357543,
+      "sha256": "e446900a437d1105759e162169599ea64ec547694b6ddc9ac58aebd39d258499"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_ppr_top3_v3_100_vs_full_eval_v3_20260731_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_ppr_top3_v3_100_vs_full_eval_v3_20260731_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 332958,
+      "sha256": "a53b5546670e5f1e170ad39cc406e3c78575024c09f7f0da2e500a8ea64c5603"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_ppr_top3_v3_100_vs_full_eval_official_v3_20260730_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_ppr_top3_v3_100_vs_full_eval_official_v3_20260730_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 303434,
+      "sha256": "4658a0d4a407d97bc7cd4060c74715ebc44a1492ae9acf6dc2de356a79536232"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/pathrag_baseline_v3/evaluation/mix_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/pathrag_baseline_v3/evaluation/mix_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 428601,
+      "sha256": "aa62d6bd03630800f2e617797ca941a970070e3a9165464b61546a07e0eb7094"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/pathrag_baseline_v3/evaluation/cs_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/pathrag_baseline_v3/evaluation/cs_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 329593,
+      "sha256": "65da211839b52c562a073bf13a380830cb094c55fbd6fa5f5383e6de96bea89c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/pathrag_baseline_v3/evaluation/legal_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/pathrag_baseline_v3/evaluation/legal_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 329566,
+      "sha256": "58f239b056f2411250893da4576f723089ec3abda2a087802cd1da6109c56fae"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/pathrag_baseline_v3/evaluation/agriculture_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/pathrag_baseline_v3/evaluation/agriculture_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 336866,
+      "sha256": "0a38b13a9bef1339930da81b64deba52ab8d9271a71fe0ec406566f6b32f09e6"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 490107,
+      "sha256": "50360a81a7b03c326dda52043dd19d7bc7017c01d3395995280fd78c8c6ee710"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 368265,
+      "sha256": "971fcd67773a1697ebe4005086f1f3188c3864a631d7f7ea7d7e94e24adbe360"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 387435,
+      "sha256": "abfa5bd0729916d7078f10a1e569d7c23c095993fb0df876c817b0513e6a7958"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 331880,
+      "sha256": "de9b4923d5fb01d2d2d40cfe4bd3eaae4c6b7c9b6843aa7cea3f23e244973fb4"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 487125,
+      "sha256": "75b437715f1fccc718924ffb06746ffe8ada25fedb42397edac7c640f73dd3f3"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 365049,
+      "sha256": "f0d2b6efb81ca631c0045a4adeb4eb1e3e5bbabb6b227372607f5b0dadc03d5c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 381984,
+      "sha256": "7825ffa68a80b8b2fdf5add74e4e6f7fafce096448cf1a11fb5929a65b73eb8b"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 389528,
+      "sha256": "ec4b190b9c96620626ad78c23048a810caccc53c527f891d16169353c17fcacd"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 431840,
+      "sha256": "57da0a817608aca066beec9ed32bf746c50a8a298b275e7d5a191d8a8df4d090"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 332527,
+      "sha256": "5275047b2718ed44518a53b5efd5847c36353e2e95b0c554dea656440c6f2daa"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 330876,
+      "sha256": "0b2c44c6e8b3cdac0905fd8747a3e93597c1b4473784f4c087d8a52b79befcaa"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 335282,
+      "sha256": "4ca9a8c0c1487ec273924cc261dd6a7b8a4d1c2895f07d42591c0a6c4f2099da"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 429797,
+      "sha256": "0ddef253fe675343f0cd5a44a520c9ae8bd1ce4492522576587e023da07cb8fe"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 340211,
+      "sha256": "477dc10938ed2ea4db49ed9880f890c270461e4a10d038ba7344354184ce3721"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 385850,
+      "sha256": "5c1835dd82e917ee49a546410cefaea827dc8712a1d8bc67ef9f12dea31e39a5"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 332590,
+      "sha256": "e240d60ec6aa7c1f412d5f0e00d630f63511217a4c25a5b66927d70969601537"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_no_trace_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_no_trace_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 495300,
+      "sha256": "3cd6e54616b4c5c8a0f02f646d2bdaa539ddab1e098a670873bc687733dbfa28"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_no_trace_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_no_trace_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 331721,
+      "sha256": "e7fc8ddec7ca8418dec3c3e985803ee288754c35857ab977c00bedb22c5a4864"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_no_trace_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_no_trace_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 388271,
+      "sha256": "6cdba31cfe42a35e743619b6128ab9d6c1db9a75398bea4931c4a1eaa517b90c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_no_trace_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_no_trace_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 332021,
+      "sha256": "1d930185aa0c2b4a0ef8d787396a2456bf461961e1a82303a3f54fdb6b04306d"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 488520,
+      "sha256": "0d814ca5d5a1b4e93a7d5bb51c9437026fc923a2bcc9b9a3e7df5bf540496bf8"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 330476,
+      "sha256": "5373ff5a423fca3ea006fe08bf98cc85b512993931ace2c3d75d112ba1765a3c"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 383066,
+      "sha256": "71df5292c747b220634dd7d66ca46a064b5e8afbcb8c5b29155d0985baf4d466"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_no_trace_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 384087,
+      "sha256": "c9054bdadc0d97fcf820d92e68a96d5f4ecf5b054deb05014d1b45b24dc79270"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_no_path_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_no_path_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 433243,
+      "sha256": "2345289184ec6f9e465ca18e9bc4832f3b914df5f0fbf3dd6de045c6c2eb965f"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_no_path_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_no_path_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 332739,
+      "sha256": "3964ecfd4e4468c6ee28409fa16cc53d787efabcac022eb6891545aed348c98b"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_no_path_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_no_path_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 325419,
+      "sha256": "0b92dad82295048cdbac022d76ed983a0ba1439dffe1dec75f0d5e0201059adf"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_no_path_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_no_path_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 329920,
+      "sha256": "2366b78d973ca7f716274e8b63f47957d6ef105991a70149c71185d0a50e7c41"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_no_path_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_no_path_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 493360,
+      "sha256": "e817c570c31e85bcc8a752774f977fa573729f2bb43009ab190767662d549455"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_no_path_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_no_path_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 365574,
+      "sha256": "9090ae5baca135b42470e0f2ddb1909ece62cf9b6fc0f700fd19e364c68665f2"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_no_path_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_no_path_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 387307,
+      "sha256": "1a0b95ca4ae4d2ac14a91cc8387ecfead03005983ca0cfd6272490227e6c5ec1"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_no_path_vs_baseline_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_no_path_vs_baseline_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 388276,
+      "sha256": "2ad9685dce5da08d53ce7831d76fd34753fb50120ee1520617d5564832889fba"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 515042,
+      "sha256": "de2ae848866b6bc9bf45eb1874e9c45ec0fafb98bd4945fa0d29a84e5a82a99e"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 382896,
+      "sha256": "79eb198158f190e258b3b5c537cb883b4ed785b9cdd3ebe453214d5e7f8e4382"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 325311,
+      "sha256": "9c624a9732fa6e0318b3ecef1b64426cdcdb690a79856be09b887eaa126b3bde"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 331015,
+      "sha256": "6aed86699599017cdef2f54a9163718e864304b669b7675252fcbe87562064b5"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 515843,
+      "sha256": "3a335dafa78f9a1cc736cdae5e1254a13fd566c2c1b309096ce861d943e876c9"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 335651,
+      "sha256": "8beae1fcd1f54ff3e8bac0a0549967c2fa40f41120748628baa00f5a8ad9e581"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 331151,
+      "sha256": "c2a6a5c47a35fc070dff4f36fccc29255ddedce351326144c34e16ade1754412"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 336584,
+      "sha256": "cdc544d30c094bfaf099cfde025b7c1c3b00ab913ff66f73a77da9e26979efb0"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 432795,
+      "sha256": "74056f0db8104fa88a75247af156a317c7b7f570cb8ad3d909a5ff3fbf94afd3"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 337209,
+      "sha256": "cd84622f72cd64b70a5d8373c83836b00229ac3ecca05944a845ea0dbd22e24e"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 331109,
+      "sha256": "bfc983b90c5432364b4d85605d6306bfb88cf13f7a9d0fef9acccdfa26a867bf"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_rank_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_rank_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 341795,
+      "sha256": "751371201c9b01444b7191df9b93602c2311d9c2b0c98201314b7fe9f642dfef"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "mix",
+      "rows": 260,
+      "bytes": 432013,
+      "sha256": "5cfbe9d07ca86427ca3cff59d4441f1c238c21865ec5d2887a9158cf4fbce152"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "cs",
+      "rows": 200,
+      "bytes": 332139,
+      "sha256": "4131ab6bed3ac948c5e38c0bdcb15a1009217f4156dda0753dfac3d895736416"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "legal",
+      "rows": 200,
+      "bytes": 331867,
+      "sha256": "dcf78423bb1877db80a6454176d0e4e3a966b23f6ef48eab982369b7dbca7f80"
+    },
+    {
+      "path": "raw/Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_vote_result_openai.jsonl",
+      "source_relative_path": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_vote_result_openai.jsonl",
+      "role": "evaluation",
+      "dataset": "agriculture",
+      "rows": 200,
+      "bytes": 336920,
+      "sha256": "0c504df99410d6a4d97cfde6c06212bf7a7c95e599c21ac2fa8a4113aacfc108"
+    }
+  ]
+}

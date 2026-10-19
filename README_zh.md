@@ -1,5 +1,11 @@
 # PlugRag
 
+## 最新论文实验核对
+
+新增 PPR、PathRAG 对比及更新后的 HiRAG、Nano 实验，见
+[论文实验发布说明](paper_results/README_zh.md)。新版论文结果以该目录的明确文件映射为准，
+不要与原有目录中的历史批次混用。历史模型标记和输入溯源待核对事项也在说明中保留。
+
 **PlugRag: A Plug-and-Play Graph Retrieval Enhancement Method Integrating Semantic and Structural Representations**
 
 [English README](README.md)
