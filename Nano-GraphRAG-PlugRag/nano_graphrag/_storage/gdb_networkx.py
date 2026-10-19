@@ -120,7 +120,9 @@ class NetworkXStorage(BaseGraphStorage):
     #     return self._graph.has_edge(source_node_id, target_node_id)
     async def has_edge(self, source_node_id: str, target_node_id: str, key: str | None = None) -> bool:
         """检查是否存在特定的边（由key区分）。"""
-        return self._graph.has_edge(source_node_id, target_node_id, key=key)
+        if self._graph.is_multigraph():
+            return self._graph.has_edge(source_node_id, target_node_id, key=key)
+        return self._graph.has_edge(source_node_id, target_node_id)
     async def get_node(self, node_id: str) -> Union[dict, None]:
         return self._graph.nodes.get(node_id)
 
@@ -146,11 +148,15 @@ class NetworkXStorage(BaseGraphStorage):
             这个方法主要是为了兼容性。
             """
             # MultiGraph.get_edge_data 支持 key 参数
-            return self._graph.get_edge_data(source_node_id, target_node_id, key=key)
+            if self._graph.is_multigraph():
+                return self._graph.get_edge_data(source_node_id, target_node_id, key=key)
+            return self._graph.get_edge_data(source_node_id, target_node_id)
     async def get_node_edges(self, source_node_id: str):
         if self._graph.has_node(source_node_id):
             # 对于 MultiGraph，必须显式请求 keys=True 才能区分平行边
-            return list(self._graph.edges(source_node_id, keys=True))
+            if self._graph.is_multigraph():
+                return list(self._graph.edges(source_node_id, keys=True))
+            return list(self._graph.edges(source_node_id))
         return None
  # VVVVVV PASTE THE NEW METHOD HERE VVVVVV
     # async def get_edge_data(self, source_node_id: str, target_node_id: str) -> dict | None:
@@ -164,7 +170,9 @@ class NetworkXStorage(BaseGraphStorage):
         获取边的属性数据，支持通过key查找特定平行边。
         这是解决您问题的核心修复。
         """
-        return self._graph.get_edge_data(source_node_id, target_node_id, key=key)
+        if self._graph.is_multigraph():
+            return self._graph.get_edge_data(source_node_id, target_node_id, key=key)
+        return self._graph.get_edge_data(source_node_id, target_node_id)
     # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     
     # async def upsert_node(self, node_id: str, node_data: dict[str, str]):
@@ -242,12 +250,15 @@ class NetworkXStorage(BaseGraphStorage):
         如果 (u, v, key) 已存在，add_edge会自动更新其属性，实现upsert功能。
         """
         # 确保ID是字符串，并对属性进行序列化
-        self._graph.add_edge(
-            str(source_node_id), 
-            str(target_node_id), 
-            key=key, 
-            **{k: self._make_graphml_serializable(v) for k, v in edge_data.items()}
-        )
+        attributes = {
+            k: self._make_graphml_serializable(v) for k, v in edge_data.items()
+        }
+        if self._graph.is_multigraph():
+            self._graph.add_edge(
+                str(source_node_id), str(target_node_id), key=key, **attributes
+            )
+        else:
+            self._graph.add_edge(str(source_node_id), str(target_node_id), **attributes)
 
     async def remove_edge(self, source_node_id: str, target_node_id: str, key: str | None = None):
         """删除指定的边，支持MultiGraph的key参数"""
@@ -335,6 +346,23 @@ class NetworkXStorage(BaseGraphStorage):
         The Leiden algorithm is used in the HiRAG.ainsert method
         """
         graph = NetworkXStorage.stable_largest_connected_component(self._graph)
+        # The retrieval graph keeps parallel relation edges. Graspologic's
+        # Leiden implementation only accepts a simple undirected graph, so use
+        # a weighted projection for community detection while leaving the
+        # original multi-relation graph untouched for retrieval.
+        if graph.is_multigraph():
+            projected_graph = nx.Graph()
+            projected_graph.add_nodes_from(graph.nodes(data=True))
+            for source, target, edge_data in graph.edges(data=True):
+                try:
+                    weight = float(edge_data.get("weight", 1.0))
+                except (TypeError, ValueError):
+                    weight = 1.0
+                if projected_graph.has_edge(source, target):
+                    projected_graph[source][target]["weight"] += weight
+                else:
+                    projected_graph.add_edge(source, target, weight=weight)
+            graph = projected_graph
         community_mapping = hierarchical_leiden(
             graph,
             max_cluster_size=self.global_config["max_graph_cluster_size"],
