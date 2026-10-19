@@ -12,6 +12,7 @@ from contextlib import contextmanager
 from typing import Union
 from collections import Counter, defaultdict
 from ._splitter import SeparatorSplitter
+from .single_graph_projection import build_single_graph_from_multi_graph
 from ._utils import (
     logger,
     clean_str,
@@ -1916,6 +1917,9 @@ async def _find_most_related_community_from_entities(
         related_community_datas[k] for k in related_community_keys
     ]
 
+    if query_param.max_community_reports is not None:
+        sorted_community_datas = sorted_community_datas[:max(0, query_param.max_community_reports)]
+
     use_community_reports = truncate_list_by_token_size(    # in case community reprot is longer than token limitation
         sorted_community_datas,
         key=lambda x: x["report_string"],
@@ -3035,8 +3039,8 @@ async def _build_hierarchical_query_context(
     entities_context = list_of_list_to_csv(entites_section_list)
     
     reasoning_path_section_list = [
-    ["id", "source", "target", "relation_type", "description", "weight", "rank"]
-]
+        ["id", "source", "target", "description", "weight", "rank"]
+    ]
 
     for i, e in enumerate(use_reasoning_path):
         # src_tgt 是 (source, target)
@@ -3047,7 +3051,7 @@ async def _build_hierarchical_query_context(
         rank = e.get("rank", 0)
 
         reasoning_path_section_list.append(
-            [i, src, tgt, relation_type, description, weight, rank]
+            [i, src, tgt, description, weight, rank]
         )
 
     reasoning_path_context = list_of_list_to_csv(reasoning_path_section_list)

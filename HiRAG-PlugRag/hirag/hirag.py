@@ -33,10 +33,13 @@ from ._op import (
     plugrag_vote_only_query,
     plugrag_semantic_rank_only_query,
 )
+from .ppr_top3 import ppr_graph_top3_query
+from .pathrag_evidence_aligned import pathrag_evidence_aligned_query
 from ._storage import (
     JsonKVStorage,
     NanoVectorDBStorage,
     NetworkXStorage,
+    NetworkXSingleStorage,
 )
 from ._utils import (
     EmbeddingFunc,
@@ -149,6 +152,16 @@ class HiRAG:
     rerank_api_key: str | None = None
     rerank_base_url: str | None = None
     rerank_model_name: str = "BAAI/bge-reranker-v2-m3"
+
+    ppr_graph_retrieval: dict = field(default_factory=dict)
+    pathrag_evidence_aligned: dict = field(default_factory=dict)
+
+    @classmethod
+    def single_graph(cls, **kwargs) -> "HiRAG":
+        """Query an explicitly prepared relation-agnostic graph workspace."""
+        kwargs["graph_storage_cls"] = NetworkXSingleStorage
+        kwargs.setdefault("enable_hierachical_mode", True)
+        return cls(**kwargs)
 
     def __post_init__(self):
         _print_config = ",\n  ".join([f"{k} = {v}" for k, v in asdict(self).items()])
@@ -264,6 +277,8 @@ class HiRAG:
             raise ValueError("enable_naive_rag is False, cannot query in naive mode")
         if mode == "hi" and not self.enable_hierachical_mode:
             raise ValueError("enable_hierachical_mode is False, cannot query in hierarchical mode")
+        if mode in {"hi_ppr_top3", "pathrag_evidence_aligned"} and not self.enable_hierachical_mode:
+            raise ValueError(f"enable_hierachical_mode is False, cannot query in {mode} mode")
         if mode == "hi_nobridge" and not self.enable_hierachical_mode:
             raise ValueError("enable_hierachical_mode is False, cannot query in hierarchical_nobridge mode")
         if mode == "hi_bridge" and not self.enable_hierachical_mode:
@@ -290,6 +305,26 @@ class HiRAG:
             )
         if mode == "hi":                        # retrieve with hierarchical knowledge
             response = await hierarchical_query(
+                query,
+                self.chunk_entity_relation_graph,
+                self.entities_vdb,
+                self.community_reports,
+                self.text_chunks,
+                param,
+                asdict(self),
+            )
+        elif mode == "hi_ppr_top3":
+            response = await ppr_graph_top3_query(
+                query,
+                self.chunk_entity_relation_graph,
+                self.entities_vdb,
+                self.community_reports,
+                self.text_chunks,
+                param,
+                asdict(self),
+            )
+        elif mode == "pathrag_evidence_aligned":
+            response = await pathrag_evidence_aligned_query(
                 query,
                 self.chunk_entity_relation_graph,
                 self.entities_vdb,

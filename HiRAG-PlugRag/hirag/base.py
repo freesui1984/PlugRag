@@ -13,6 +13,8 @@ class QueryParam:
         "hi_nobridge",
         "naive",
         "hi",
+        "hi_ppr_top3",
+        "pathrag_evidence_aligned",
         "plugrag_full",
         "plugrag_rank_only",
         "plugrag_vote_only",
@@ -44,6 +46,7 @@ class QueryParam:
     max_token_for_local_context: int = 4000
     max_token_for_bridge_knowledge: int = 4000
     max_token_for_community_report: int = 3200
+    max_community_reports: int | None = None
     community_single_one: bool = False
 
 

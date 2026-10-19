@@ -115,8 +115,10 @@ async def OPENAI_model_if_cache(
         if if_cache_return is not None:
             return if_cache_return["return"]
 
+    kwargs.setdefault("max_tokens", int(batch_config.get("generation_max_tokens", 8000)))
+    kwargs.setdefault("temperature", 0.0)
     response = await openai_async_client.chat.completions.create(
-        model=OPENAI_MODEL, messages=messages, **kwargs, temperature=0.0
+        model=OPENAI_MODEL, messages=messages, **kwargs
     )
 
     if hashing_kv is not None:
@@ -129,7 +131,8 @@ async def OPENAI_model_if_cache(
 # 注意：如果在批量跑脚本时，通常不需要每次都 re-index (insert)。
 # 如果已构建过索引，建议注释掉 graph_func.insert 部分。
 
-graph_func = HiRAG(working_dir=config['hirag']['working_dir'],
+graph_factory = HiRAG.single_graph if config['hirag'].get('graph_storage', 'multi') == 'single' else HiRAG
+graph_func = graph_factory(working_dir=config['hirag']['working_dir'],
                       enable_llm_cache=config['hirag']['enable_llm_cache'],
                       embedding_func=OPENAI_embedding,
                       best_model_func=OPENAI_model_if_cache,
@@ -143,7 +146,9 @@ graph_func = HiRAG(working_dir=config['hirag']['working_dir'],
                       rgcn_mapping_file=graph_encoder_config["mapping_file"],
                       rerank_api_key=rerank_config.get("api_key") or config["openai"].get("api_key") or os.environ.get("RERANK_API_KEY"),
                       rerank_base_url=rerank_config.get("base_url") or config["openai"].get("base_url") or os.environ.get("RERANK_BASE_URL"),
-                      rerank_model_name=rerank_config.get("model", "BAAI/bge-reranker-v2-m3"))
+                      rerank_model_name=rerank_config.get("model", "BAAI/bge-reranker-v2-m3"),
+                      ppr_graph_retrieval=config.get("ppr_graph_retrieval", {}),
+                      pathrag_evidence_aligned=config.get("pathrag_evidence_aligned", {}))
 
 # [重要] 如果之前已经跑过 insert，这里建议注释掉，否则每次启动都会重新索引，浪费时间。
 # with open("datasets/mix/mix_unique_contexts.json", "r", encoding="utf-8") as f:
@@ -195,6 +200,11 @@ async def main_batch_process():
     param = QueryParam(
         mode=batch_config.get("mode", "hi"),
         top_k=int(batch_config.get("top_k", 20)),
+        max_token_for_text_unit=int(batch_config.get("max_token_for_text_unit", 4000)),
+        max_token_for_local_context=int(batch_config.get("max_token_for_local_context", 4000)),
+        max_token_for_bridge_knowledge=int(batch_config.get("max_token_for_bridge_knowledge", 4000)),
+        max_token_for_community_report=int(batch_config.get("max_token_for_community_report", 3200)),
+        max_community_reports=batch_config.get("max_community_reports"),
     )
 
     # 2. 读取输入

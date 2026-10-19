@@ -33,6 +33,8 @@ rerank:
   model: "BAAI/bge-reranker-v2-m3"
 
 hirag:
+  # multi for relation-aware PlugRag; single for an explicitly prepared native graph.
+  graph_storage: "multi"
   # The directory containing HiRAG graph/vector/cache files.
   working_dir: "work_dir_data_mix"
   enable_llm_cache: false
@@ -44,7 +46,7 @@ hirag:
 
 batch_query:
   # Optional defaults for hi_batch_query.py. Environment variables override these.
-  # Main modes: plugrag_full, plugrag_rank_only, plugrag_vote_only.
+  # Also supported: hi_ppr_top3 and pathrag_evidence_aligned (same-graph baselines).
   input_file: "queries.jsonl"
   output_file: "answers.jsonl"
   concurrency: 5
@@ -54,6 +56,33 @@ batch_query:
   # GCN ablations still run through plugrag_full; only this encoder changes.
   graph_encoder: "rgcn"
   top_k: 20
+  generation_max_tokens: 8000
+  max_token_for_text_unit: 4000
+  max_token_for_local_context: 4000
+  max_token_for_bridge_knowledge: 4000
+  max_token_for_community_report: 3200
+  max_community_reports: null
+
+# Defaults below describe the released comparison implementations. They are not
+# a recovered, per-run configuration log for every historical result artifact.
+ppr_graph_retrieval:
+  damping: 0.85
+  max_iter: 100
+  tol: 0.000001
+  lock_top_n: 3
+  relation_limit: 200
+
+pathrag_evidence_aligned:
+  candidate_top_k: 20
+  entity_pool_size: 40
+  lock_top_n: 3
+  priority_flow_n: 2
+  display_top_k: 20
+  alpha: 0.85
+  theta: 0.005
+  max_hops: 4
+  max_paths: 15
+  relation_limit: 200
 
 rgcn:
   # Main PlugRag graph encoder.
