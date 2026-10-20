@@ -1,0 +1,29 @@
+{
+  "sha256": "a9e21836c89d10eddbb8032bcc889cff76e99f04f47032e54902591cfb6fbd56",
+  "bytes": 349603,
+  "answer_rows": 130,
+  "unique_queries": 130,
+  "nonempty_answers": 130,
+  "candidate_order_matches_queries": true,
+  "generation_log_question_count": 130,
+  "log_order_matches_candidate": true,
+  "candidate_last_write": "2026-07-30T11:28:16.628475+08:00",
+  "log_last_write": "2026-07-30T11:28:16.756942+08:00",
+  "last_write_gap_seconds": 0.1284665,
+  "content_comparisons": {
+    "mix_hirag_plugrag_rgcn_path.jsonl": {
+      "same_answers": 0,
+      "compared_rows": 130
+    },
+    "mix_hirag_ppr_top3_siliconflow_v3.jsonl": {
+      "same_answers": 0,
+      "compared_rows": 130
+    }
+  },
+  "candidate": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_full_v3_candidate_answers.jsonl",
+  "generation_log_relative_to_original_workspace": "HiRAG-PlugRag/evel/datasets/mix/results/logs/mix_full_siliconflow_v3_rerun_20260730_generate.log",
+  "author_response_date": "2026-10-20",
+  "author_response": "Does not recall renaming; accepts data-based checking.",
+  "status": "Corroborated candidate; exact historical answer batch identity remains unverified.",
+  "boundary": "No re-evaluation was run. The archived judgments and manuscript percentages are unchanged."
+}

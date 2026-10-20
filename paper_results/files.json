@@ -1655,6 +1655,16 @@
       "rows": 200,
       "bytes": 336920,
       "sha256": "0c504df99410d6a4d97cfde6c06212bf7a7c95e599c21ac2fa8a4113aacfc108"
+    },
+    {
+      "path": "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_full_v3_candidate_answers.jsonl",
+      "source_relative_path": "HiRAG-PlugRag/evel/datasets/mix/answers/1.jsonl",
+      "role": "answers",
+      "dataset": "mix",
+      "rows": 130,
+      "bytes": 349603,
+      "sha256": "a9e21836c89d10eddbb8032bcc889cff76e99f04f47032e54902591cfb6fbd56",
+      "archive_status": "corroborated_candidate_not_verified_exact_historical_input"
     }
   ]
 }

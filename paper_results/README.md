@@ -25,7 +25,8 @@ python paper_results/audit.py
 python -m unittest discover -s paper_results/tests -v
 ```
 
-The audit checks 184 immutable JSONL files, 88 dataset/comparison combinations,
+The audit checks 185 immutable JSONL files (including one supplemental candidate
+answer file), 88 dataset/comparison combinations,
 and 188 reported percentages, including aggregate values. It rejects malformed
 or missing winner fields, wrong counts, changed checksums, unexpected raw files,
 duplicate questions, and inconsistent question order among archived input files.
@@ -53,6 +54,9 @@ These two averages must not be interchanged.
 - `RELEASE_NOTES.md`: unresolved provenance issues and source-code boundaries.
 - `provenance/`: selected existing result-index documents, preserved as evidence,
   not new certifications that their historical settings were uniform.
+  `mix_full_candidate.json` records the content/order and log-timing evidence
+  for the supplemental Mix `answers/mix_hirag_plugrag_full_v3_candidate_answers.jsonl` (original source name: `1.jsonl`). Its exact historical input-batch
+  identity remains unverified; no judgments were regenerated from this candidate.
 
 ## Additional retrieval code
 

@@ -535,7 +535,14 @@
       },
       "evaluation_file": "raw/HiRAG-PlugRag/evel/datasets/mix/results/mix_full_v3_rerun_vs_ppr_v3_eval_v3_resume_result_openai.jsonl",
       "provenance_status": "historical_archive_no_embedded_answer_hashes_or_model_id",
-      "candidate_answer_pairs": []
+      "candidate_answer_pairs": [
+        [
+          "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_plugrag_full_v3_candidate_answers.jsonl",
+          "raw/HiRAG-PlugRag/evel/datasets/mix/answers/mix_hirag_ppr_top3_siliconflow_v3.jsonl"
+        ]
+      ],
+      "candidate_pair_status": "question_order_and_generation_log_timing_correlated; original_answer_hash_not_recorded",
+      "candidate_evidence_file": "provenance/mix_full_candidate.json"
     },
     {
       "id": "controlled/2/HiRAG+PlugRag → PPR-based",

@@ -25,9 +25,15 @@ experimental fairness, statistical significance, or full execution provenance.
    contain `v4pro`. Those filenames and archived descriptions are retained as
    historical evidence; they do not override the latest reporting rule above.
 3. The PPR index lists a Mix Full rerun answer file named
-   `mix_hirag_plugrag_full_siliconflow_v3_rerun_20260730.jsonl`. That exact
-   file was not located. Its comparison judgments and the PPR answers are
-   preserved, but another Full batch has not been substituted as the exact input.
+   `mix_hirag_plugrag_full_siliconflow_v3_rerun_20260730.jsonl`. A strongly
+   corroborated renamed-file candidate, `answers/mix_hirag_plugrag_full_v3_candidate_answers.jsonl`
+   (original source name: `1.jsonl`), was added locally on
+   2026-10-20. All 130 questions match the query file and generation log in order;
+   its last write precedes log completion by about 0.128 seconds. The author does
+   not recall renaming it and accepts data-based checking. No historical answer
+   hash was recovered, so its exact original batch identity is still unverified.
+   It is supplemental candidate evidence, not a replacement for the judgments or
+   a claim of fresh re-evaluation. See `provenance/mix_full_candidate.json`.
 4. Historical judgment rows lack answer hashes, query IDs, timestamps and model
    identifiers. Candidate answers copied from a corresponding archive have not
    thereby been proven to be the exact API inputs. `candidate_answer_pairs`
