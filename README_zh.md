@@ -1,11 +1,5 @@
 # PlugRag
 
-## 最新论文实验核对
-
-新增 PPR、PathRAG 对比及更新后的 HiRAG、Nano 实验，见
-[论文实验发布说明](paper_results/README_zh.md)。新版论文结果以该目录的明确文件映射为准，
-不要与原有目录中的历史批次混用。历史模型标记和输入溯源待核对事项也在说明中保留。
-
 **PlugRag: A Plug-and-Play Graph Retrieval Enhancement Method Integrating Semantic and Structural Representations**
 
 [English README](README.md)
@@ -36,18 +30,21 @@ github_code_release_20260619/
 │   ├── evel/
 │   ├── config.example.yaml
 │   ├── environment.yml
-│   └── readme.md
 ├── Nano-GraphRAG-PlugRag/
 │   ├── nano_graphrag/
 │   ├── evel/
 │   ├── config_example.yaml
 │   ├── environment.yml
-│   └── readme.md
+├── paper_results/
+│   ├── raw/
+│   ├── experiments.json
+│   ├── files.json
+│   └── audit.py
 └── assets/
     └── figure2-plugrag-overview.png
 ```
 
-HiRAG 和 Nano-GraphRAG 两个子目录可以分别运行。更具体的依赖、配置和命令见各自目录下的 `readme.md`。
+HiRAG 和 Nano-GraphRAG 两个子目录可以分别运行，安装、配置、训练、问答和评测方法统一见下文。
 
 ## 无侵入式接入
 
@@ -58,11 +55,13 @@ PlugRag 的接入方式是无侵入式的：
 - 只在实体级 local retrieval 与 context construction 阶段加入增强模块。
 - 图编码器训练结果通过 YAML 配置和 checkpoint 路径选择，不需要把 R-GCN / GCN / Multi-edge GCN 拆成多个复杂查询入口。
 
-发布版统一保留三个正式查询模式：
+PlugRag 提供三个查询模式：
 
 - `plugrag_full`：完整 PlugRag，包含结构扩展、混合排序和 trace/path 上下文。
 - `plugrag_rank_only`：语义排序消融，不使用图编码器结构扩展。
 - `plugrag_vote_only`：结构投票消融，不使用语义融合重排。
+
+HiRAG 还提供 `hi_ppr_top3` 和 `pathrag_evidence_aligned`，用于 PPR 和 PathRAG 风格的受控检索比较。这两个模式共用 HiRAG 图谱和答案生成流程，并非完整复现 HippoRAG 或 PathRAG 系统。使用时将 `batch_query.graph_encoder` 设为 `none`；实现分别位于 `HiRAG-PlugRag/hirag/ppr_top3.py` 和 `HiRAG-PlugRag/hirag/pathrag_evidence_aligned.py`。
 
 ## 安装
 
@@ -106,11 +105,16 @@ Windows PowerShell：
 ```powershell
 copy HiRAG-PlugRag/config.example.yaml HiRAG-PlugRag/config.local.yaml
 copy Nano-GraphRAG-PlugRag/config_example.yaml Nano-GraphRAG-PlugRag/config_local.yaml
+$env:PLUGRAG_CONFIG="config.local.yaml" # HiRAG；Nano 使用 config_local.yaml
 $env:OPENAI_API_KEY="your_api_key"
 $env:OPENAI_BASE_URL="https://api.siliconflow.cn/v1"
 ```
 
 论文实验中使用 BGE-M3 作为初始实体语义表示，使用 R-GCN / Simple GCN / Multi-edge R-GCN+TransE 作为图编码器变体，使用 BGE-Reranker-v2-M3 进行 reranking。
+
+Linux / macOS 使用 `export PLUGRAG_CONFIG=config.local.yaml`（Nano 使用 `config_local.yaml`）选择配置，并用 `export OPENAI_API_KEY=...` 等环境变量设置接口信息。
+
+训练和问答前需准备基础框架的图谱与索引。HiRAG 通过 `hirag.working_dir` 指定，Nano 通过 `storage.working_dir` 指定；Nano 也可通过 `indexing.context_file` 和 `indexing.insert_before_training` 从语料建索引。在本地 YAML 中设置模型接口、实体嵌入与映射文件、问题和输出路径。下列命令以已有兼容图谱与索引为前提。
 
 ## 训练
 
@@ -185,20 +189,39 @@ python hi_batch_query.py
 - Legal
 - Agriculture
 
-发布版中，HiRAG 和 Nano-GraphRAG 的评测数据分别放在：
+更新后的论文答案和评测记录分别放在：
 
 ```text
-HiRAG-PlugRag/evel/
-Nano-GraphRAG-PlugRag/evel/
+paper_results/raw/HiRAG-PlugRag/evel/datasets/
+paper_results/raw/Nano-GraphRAG-PlugRag/evel/datasets/
 ```
 
-每个数据集目录只保留 JSONL 发布文件：queries、answers 和 OpenAI/LLM-as-a-judge 结果文件。评测脚本保留论文实验使用的原始 `batch_eval.py`：
+`paper_results/experiments.json` 给出比较实验、评测文件和答案顺序的对应关系，`paper_results/files.json` 记录来源路径与校验值。新版结果请按这些映射读取；原有 `evel/` 中也有历史批次。补充的 Mix Full 答案文件名保留 `candidate`，表示其历史批次身份尚未完全确认。
+
+从仓库根目录运行以下命令，可离线核对归档文件和论文百分比，不调用模型 API：
 
 ```bash
+python paper_results/audit.py
+python -m unittest discover -s paper_results/tests -q
+```
+
+需要重新进行成对评测时，在对应基础框架目录下运行：
+
+```bash
+cp evel/evaluation_code/eval_config.example.yaml evel/evaluation_code/eval_config.yaml
 python evel/evaluation_code/batch_eval.py --help
 ```
 
+也可通过 `PLUGRAG_EVAL_CONFIG` 指定评测配置文件，避免将 API 密钥写入仓库。
+
 评测维度包括 Comprehensiveness、Empowerment、Diversity 和 Overall Winner。论文实验采用双向位置交换的 pairwise evaluation，以缓解 Answer 1 / Answer 2 的位置偏差。
+
+## 运行说明
+
+- 图谱、索引及训练产物不随代码打包，需准备本地数据和相应路径。
+- 示例配置用于新实验，不代表每个历史批次的实际配置；离线核对不等于重新生成答案或确认历史模型身份。
+- 问答及模型评测需要有效 API 凭据，调用可能产生费用。请勿提交密钥。
+- 代码测试可在 `HiRAG-PlugRag` 中运行 `python -m pytest -q tests`。
 
 ## 主要发现
 

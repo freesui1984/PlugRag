@@ -1,8 +1,12 @@
 import setuptools
 from setuptools import find_packages
+from pathlib import Path
 
-with open("readme.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+readme = Path(__file__).resolve().parent.parent / "README.md"
+long_description = (
+    readme.read_text(encoding="utf-8") if readme.is_file()
+    else "PlugRag graph retrieval enhancement for HiRAG."
+)
 
 
 vars2find = ["__author__", "__version__", "__url__"]
