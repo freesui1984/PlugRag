@@ -216,6 +216,8 @@ python evel/evaluation_code/batch_eval.py --help
 
 评测维度包括 Comprehensiveness、Empowerment、Diversity 和 Overall Winner。论文实验采用双向位置交换的 pairwise evaluation，以缓解 Answer 1 / Answer 2 的位置偏差。
 
+经作者确认，答案生成使用 DeepSeek-V3；跨框架比较由 Pro 评判，框架内比较、PPR/PathRAG 对比及消融评测由 DeepSeek-R1 评判。答案生成与评测是不同阶段。历史文件名予以保留，不作为模型身份的依据；报告使用的评测模型见 `paper_results/experiments.json`。
+
 ## 运行说明
 
 - 图谱、索引及训练产物不随代码打包，需准备本地数据和相应路径。

@@ -234,6 +234,8 @@ The evaluation dimensions are:
 
 The paper uses bidirectional position-swapped pairwise evaluation to reduce answer-order bias.
 
+As confirmed by the authors, answer generation uses DeepSeek-V3. Cross-framework comparisons are judged by Pro; within-framework comparisons, PPR/PathRAG comparisons, and ablations are judged by DeepSeek-R1. Generation and judging are separate stages. Historical filenames are retained and are not authoritative model identifiers; reported judges are recorded in `paper_results/experiments.json`.
+
 ## Reproducibility Notes
 
 - Public configuration files do not contain private API keys.

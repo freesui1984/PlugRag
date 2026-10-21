@@ -8,7 +8,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/eval/total/mix/mix_legacy_rgcn_full_vs_hirag_r1_recheck_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 56.15,
@@ -25,7 +25,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/eval/total/cs/cs_native_hirag_vs_full_r1_recheck_result_deepseek.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 55.0,
@@ -42,7 +42,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/eval/total/leagl/legal_native_hirag_vs_full_r1_recheck_result_deepseek.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 55.5,
@@ -59,7 +59,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/eval/total/agriculture/agriculture_native_hirag_vs_rgcn_full_r1_result_deepseek.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 54.0,
@@ -76,7 +76,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/eval/total/mix/simple_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 46.92,
@@ -93,7 +93,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/eval/total/cs/cs_simple_gcn_vs_native_single_siliconflow_R1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 49.5,
@@ -110,7 +110,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/eval/total/leagl/legal_simple_gcn_vs_native_hirag_siliconflow_R1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 51.5,
@@ -127,7 +127,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/eval/total/agriculture/agriculture_simple_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 49.5,
@@ -144,7 +144,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/eval/total/mix/multi_edge_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 45.38,
@@ -161,7 +161,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/eval/total/cs/cs_multi_edge_gcn_vs_native_single_siliconflow_R1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 51.0,
@@ -178,7 +178,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/eval/total/leagl/legal_multi_edge_gcn_vs_native_hirag_siliconflow_R1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 53.0,
@@ -195,7 +195,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/eval/total/agriculture/agriculture_multi_edge_gcn_vs_native_hirag_r1_result_deepseek.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 55.0,
@@ -212,7 +212,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/mix/nanofull_vs_nano_r1_result.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 55.77,
@@ -229,7 +229,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/cs/nanofull_vs_nano_r1_result.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 55.5,
@@ -246,7 +246,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/legal/nanofull_vs_nano_r1_result.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 53.5,
@@ -263,7 +263,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/eval/nano_vs_hirag/evaluation/agriculture/nanofull_vs_nano_r1_result.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 57.0,
@@ -280,7 +280,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_simple_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 53.85,
@@ -297,7 +297,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_simple_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 51.0,
@@ -314,7 +314,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_simple_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 57.0,
@@ -331,7 +331,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_simple_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 51.5,
@@ -348,7 +348,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 50.38,
@@ -365,7 +365,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 52.0,
@@ -382,7 +382,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 49.0,
@@ -399,7 +399,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_multi_edge_gcn_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "2, A1",
       "expected_percent": {
         "Overall Winner": 49.0,
@@ -528,7 +528,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_full_v3_rerun_vs_ppr_v3_eval_v3_resume_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 55.77
@@ -549,7 +549,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_ppr_top3_v3_100_vs_full_eval_sensenova_deepseek_20260731_result_openai.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 52.0
@@ -563,7 +563,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_ppr_top3_v3_100_vs_full_eval_v3_20260731_result_openai.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 59.0
@@ -577,7 +577,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_ppr_top3_v3_100_vs_full_eval_official_v3_20260730_result_openai.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 56.0
@@ -591,7 +591,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/pathrag_baseline_v3/evaluation/mix_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 57.31
@@ -605,7 +605,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/pathrag_baseline_v3/evaluation/cs_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 56.0
@@ -619,7 +619,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/pathrag_baseline_v3/evaluation/legal_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 66.5
@@ -633,7 +633,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/pathrag_baseline_v3/evaluation/agriculture_pathrag_aligned_v3_vs_plugrag_full_siliconflow_v3.jsonl",
       "target_first_pass_answer": 2,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "3",
       "expected_percent": {
         "Overall Winner": 61.0
@@ -647,7 +647,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.31
@@ -686,7 +686,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.5
@@ -725,7 +725,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 54.0
@@ -764,7 +764,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.5
@@ -803,7 +803,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 54.62
@@ -842,7 +842,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 49.5
@@ -881,7 +881,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 49.0
@@ -920,7 +920,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 48.0
@@ -959,7 +959,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.69
@@ -998,7 +998,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.5
@@ -1037,7 +1037,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.5
@@ -1076,7 +1076,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_rgcn_vs_multi_edge_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 54.5
@@ -1115,7 +1115,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.77
@@ -1154,7 +1154,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 55.0
@@ -1193,7 +1193,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 46.0
@@ -1232,7 +1232,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_rgcn_vs_simple_gcn_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.5
@@ -1271,7 +1271,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_no_trace_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.08
@@ -1310,7 +1310,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_no_trace_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 51.0
@@ -1349,7 +1349,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_no_trace_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 56.0
@@ -1388,7 +1388,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_no_trace_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 51.5
@@ -1427,7 +1427,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_no_trace_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.31
@@ -1466,7 +1466,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_no_trace_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.5
@@ -1505,7 +1505,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_no_trace_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.0
@@ -1544,7 +1544,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_no_trace_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.0
@@ -1583,7 +1583,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_no_path_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 48.46
@@ -1622,7 +1622,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_no_path_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.0
@@ -1661,7 +1661,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_no_path_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 51.5
@@ -1700,7 +1700,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_no_path_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 55.0
@@ -1739,7 +1739,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_no_path_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.69
@@ -1778,7 +1778,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_no_path_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 56.0
@@ -1817,7 +1817,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_no_path_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.0
@@ -1856,7 +1856,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_no_path_vs_baseline_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 51.0
@@ -1895,7 +1895,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 51.15
@@ -1934,7 +1934,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 56.0
@@ -1973,7 +1973,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 52.0
@@ -2012,7 +2012,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.0
@@ -2051,7 +2051,7 @@
       "dataset": "mix",
       "source": "HiRAG-PlugRag/evel/datasets/mix/results/mix_hirag_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.38
@@ -2090,7 +2090,7 @@
       "dataset": "cs",
       "source": "HiRAG-PlugRag/evel/datasets/cs/results/cs_hirag_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.5
@@ -2129,7 +2129,7 @@
       "dataset": "legal",
       "source": "HiRAG-PlugRag/evel/datasets/legal/results/legal_hirag_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 55.0
@@ -2168,7 +2168,7 @@
       "dataset": "agriculture",
       "source": "HiRAG-PlugRag/evel/datasets/agriculture/results/agriculture_hirag_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 51.0
@@ -2207,7 +2207,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.0
@@ -2246,7 +2246,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 50.0
@@ -2285,7 +2285,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.5
@@ -2324,7 +2324,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_rank_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.5
@@ -2363,7 +2363,7 @@
       "dataset": "mix",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/mix/results/mix_nano_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 48.85
@@ -2402,7 +2402,7 @@
       "dataset": "cs",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/cs/results/cs_nano_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 58.0
@@ -2441,7 +2441,7 @@
       "dataset": "legal",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/legal/results/legal_nano_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 55.0
@@ -2480,7 +2480,7 @@
       "dataset": "agriculture",
       "source": "Nano-GraphRAG-PlugRag/evel/datasets/agriculture/results/agriculture_nano_full_vs_vote_result_openai.jsonl",
       "target_first_pass_answer": 1,
-      "judge_reporting": "DeepSeek-V3 (latest author correction 2026-10-19; non-cross-framework evaluation)",
+      "judge_reporting": "DeepSeek-R1 (author correction 2026-10-21; non-cross-framework evaluation)",
       "paper_table": "4",
       "expected_percent": {
         "Overall Winner": 53.5
